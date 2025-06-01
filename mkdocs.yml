@@ -1,0 +1,41 @@
+site_name: Ruth Lichterma (2025.1)
+site_description: Documentação do projeto do grupo Betty Snyder de Qualidade de Software (2025.1), Turma 1
+
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2025-1-T01-RUTH-LICHTERMA/tree/main
+repo_name: 2025-1-T01-RUTH-LICHTERMA
+
+nav:
+  - Home: index.md
+  - Atas de Reunião: reunioes.md
+  - Contextualização: contextualizacao.md
+  - Artefato GQM:
+    - Objetivos: gqm/gqm.md
+    - Abstraction Sheets: gqm/abstractionsheets.md
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/brightness-7 
+      name: Clique para trocar para Modo Escuro
+    primary: teal
+
+  - scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Clique para trocar para Alto Contraste
+    primary: teal
+
+  - scheme: high-contrast
+    primary: black
+    accent: yellow
+    toggle:
+      icon: material/weather-cloudy-alert
+      name: Clique para trocar para Modo Claro
+    
+  extra_css: [stylesheets/extra.css]

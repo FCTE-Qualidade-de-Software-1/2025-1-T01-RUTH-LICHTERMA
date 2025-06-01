@@ -1,13 +1,14 @@
-# Qualidade de software - 2025.1 - T1x- Nome do grupo
+| Versão | Data | Descrição  |  Autor(a) |
+|--------|------|------------|-----------|
+|`1.0.0`| 31/05/2025 | Mudanças em Sobre, Link da Página e Integrantes | Raphael Mendes da Silva, Leonardo Barcellos |
 
-## :scroll: Sobre o projeto
+## Sobre o projeto
    Este projeto é um produto das aulas de Qualidade de Software, ministradas no primeiro semestre letivo de 2025. Nosso objetivo em específico é a análise do projeto [AgroMart](https://github.com/AgroMart) em relação a aspectos de qualidade de software, indicando melhorias ao produto.
 
-## :paperclip: Link da página de documentação
 
+## [Link da página de documentação](https://agromart.github.io/docs/docs/intro/)
 
-
-## :star2: Integrantes
+## Integrantes
 
 <center>
 <table style="margin-left: auto; margin-right: auto;">
@@ -49,24 +50,6 @@
                 <h5 class="text-center">Raphael Mendes da Silva</h5>
                 <h5 class="text-center">211039690</h5>
             </a>
-        </td>
-        
+        </td>       
 </table>
- <! -- ## :email: Site -->
-<hr/>
 
-<!--
-## :bookmark_tabs: Documentação 
-
-- [Documentação 1](linkDocumentacao1)
-- [Documentação 2](linkDocumentacao1)
-- [Documentação 3](linkDocumentacao1)
-- [Documentação 4](linkDocumentacao1)
-- [Documentação 5](linkDocumentacao1)
--->
-
-## :octocat: Histórico de versão 
-
-| Versão | Data | Descrição  |  Autor(a) |
-|--------|------|------------|-----------|
-|`1.0.0`|31/05/2025|Mudanças em Sobre, Link da Página e Integrantes|Raphael Mendes da Silva|
