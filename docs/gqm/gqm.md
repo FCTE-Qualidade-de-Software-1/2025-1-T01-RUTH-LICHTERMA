@@ -24,7 +24,6 @@ O AGROMART é um software desenvolvido para conectar diretamente agricultores e 
 | No contexto da | Disciplina QSW1 |
 
 ## Questões Objetivo de Medição 1: Usabilidade
-A FAZER
 
 
 > **Q1:** O usuário consegue completar o cadastro sem dificuldades?  
@@ -46,7 +45,7 @@ A FAZER
  **Hipótese 6:** 90% dos usuários afirmam que as informações dos produtos são suficientes e compreensíveis.
 
 > **Q7:** A plataforma carrega rapidamente em diferentes dispositivos e conexões?                
- **Hipótese 7:** O tempo médio de carregamento das páginas é inferior a 3 segundos.
+ **Hipótese 7:** O tempo médio de carregamento das páginas é inferior a 3.5 segundos.
 
 
 
@@ -68,6 +67,8 @@ A FAZER
 -->
 ## Referências Bibliográfica
 > https://www.nngroup.com/books/usability-engineering/
+FENTON, Norman; BIEMAN, James. Software Metrics: A Rigorous and Practical Approach. 3. ed. Boca Raton: CRC Press, 2015.
+
 
 
 ## Historico de Versões
@@ -76,4 +77,4 @@ A FAZER
 |:----:|----|---------|-----|
 |`1.0`|22/05/2025|Criação do documento|Leonardo Barcellos|
 |`1.1`|22/05/2025|Revisão|Raphael Mendes|
-|`1.2`| 02/06/2025|Criação| Breno Lucena, Luis Fernando e Dannyeclisson Rodrigo|
+|`1.2`| 02/06/2025|Criação| Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo|
