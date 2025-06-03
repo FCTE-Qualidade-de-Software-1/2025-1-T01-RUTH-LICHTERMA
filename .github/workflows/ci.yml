@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - gqm-perguntas
+      - main
 permissions:
   contents: write
 jobs:
