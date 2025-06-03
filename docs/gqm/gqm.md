@@ -23,8 +23,8 @@ O AGROMART é um software desenvolvido para conectar diretamente agricultores e 
 ## Questões Objetivo de Medição 1: Usabilidade
 A FAZER
 
-> **Q1:** aaa  
-**Hipótese 1:** aaa
+> **Q1:** Quão intuitivo é o processo de cadastro de um novo usuário na plataforma AgroMart?
+**Hipótese 1:** A maioria dos novos usuários consegue completar o cadastro sem consultar a ajuda ou suporte.
 
 > **Q2:** aaa  
 **Hipótese 2:** aaa
