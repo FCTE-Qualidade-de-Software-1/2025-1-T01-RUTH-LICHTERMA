@@ -76,4 +76,4 @@ A FAZER
 |:----:|----|---------|-----|
 |`1.0`|22/05/2025|Criação do documento|Leonardo Barcellos|
 |`1.1`|22/05/2025|Revisão|Raphael Mendes|
-|`1.2`| 02/06/2025|Criação|Breno Lucena, Luis Fernando e Dannyeclisson Rodrigo|
+|`1.2`| 02/06/2025|Criação|Breno Lucena,Luis Fernando e Dannyeclisson Rodrigo|
