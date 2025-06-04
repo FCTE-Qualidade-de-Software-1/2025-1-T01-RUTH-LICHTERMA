@@ -29,6 +29,16 @@
 
 **Resultados:** Pages criado.
 
+## Reunião 4
+
+**Data:** 03 de Junho de 2025
+
+**Objetivo:** Correções Pages e terminar *GQM*.
+
+**Participantes:** Luis Fernando, Dannyeclisson Rodrigo, Breno Lucena  .
+
+**Resultados:** Pages criado.
+
 
 
 | Versão | Data | Descrição  |  Autor(a) |

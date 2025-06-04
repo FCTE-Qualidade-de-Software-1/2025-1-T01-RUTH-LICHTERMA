@@ -1,6 +1,9 @@
 ## Objetivo de Negócio do AgroMart
+<div align="justify">
 
 O AGROMART é um software desenvolvido para conectar diretamente agricultores e consumidores, especialmente em resposta ao isolamento social da pandemia de COVID-19. Focado na comercialização de produtos agroecológicos, a plataforma apoia a criação e gestão de Comunidades que Sustentam a Agricultura (CSAs), facilitando a comunicação, organização de entregas e compartilhamento de informações entre produtores e consumidores. O sistema busca reduzir a dependência de intermediários, aumentar a margem de lucro dos pequenos produtores e melhorar a gestão e o engajamento nas CSAs por meio de funcionalidades como cadastro de usuários, pedidos de produtos e formação de grupos de consumo consciente.
+
+</div>.
 
 ## Objetivos de Medição
 
@@ -23,26 +26,26 @@ O AGROMART é um software desenvolvido para conectar diretamente agricultores e 
 ## Questões Objetivo de Medição 1: Usabilidade
 A FAZER
 
-> **Q1:** aaa  
-**Hipótese 1:** aaa
+> **Q1:** O usuário consegue completar o cadastro sem dificuldades?  
+ **Hipótese 1:** Pelo menos 90% dos usuários conseguem realizar o cadastro sem ajuda.
 
-> **Q2:** aaa  
-**Hipótese 2:** aaa
+> **Q2:** A terminologia utilizada na plataforma é compreensível para o público-alvo?  
+ **Hipótese 2:** Pelo menos 85% dos usuários entendem os termos sem necessidade de explicação.
 
-> **Q3:** aaa  
-**Hipótese 3:** aaa
+> **Q3:** A interface apresenta um design consistente em todas as páginas?  
+ **Hipótese 3:** 90% dos usuários percebem consistência visual e funcional na plataforma.
 
-> **Q4:** aaa  
-**Hipótese 4:** aaa
+> **Q4:**Os ícones e botões utilizados são facilmente compreendidos sem texto auxiliar?  
+**Hipótese 4:** 85% dos usuários reconhecem os ícones sem necessidade de legenda.
 
-> **Q5:** aaa  
-**Hipótese 5:** aaa
+> **Q5:**  O usuário consegue recuperar-se facilmente de erros (ex: digitar algo errado)?  
+**Hipótese 5:** Pelo menos 80% dos usuários conseguem corrigir erros sem abandonar a tarefa.
 
-> **Q6:** aaa  
-**Hipótese 6:** aaa
+> **Q6:** As informações sobre os produtos (descrição, preço, origem) estão claras? 
+**Hipótese 6:** 90% dos usuários afirmam que as informações dos produtos são suficientes e compreensíveis.
 
-> **Q7:** aaa  
-**Hipótese 7:** aaa
+> **Q7:** A plataforma carrega rapidamente em diferentes dispositivos e conexões? 
+**Hipótese 7:** O tempo médio de carregamento das páginas é inferior a 3 segundos.
 
 ## Relação entre Objetivos de Medição - Questões e Métricas
 

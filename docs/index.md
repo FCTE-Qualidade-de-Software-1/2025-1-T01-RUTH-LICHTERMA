@@ -3,8 +3,10 @@
 |`1.0.0`| 31/05/2025 | Mudanças em Sobre, Link da Página e Integrantes | Raphael Mendes da Silva, Leonardo Barcellos |
 
 ## Sobre o projeto
+<div align="justify">
    Este projeto é um produto das aulas de Qualidade de Software, ministradas no primeiro semestre letivo de 2025. Nosso objetivo em específico é a análise do projeto [AgroMart](https://github.com/AgroMart) em relação a aspectos de qualidade de software, indicando melhorias ao produto.
 
+</div>
 
 ## [Link da página de documentação](https://agromart.github.io/docs/docs/intro/)
 
