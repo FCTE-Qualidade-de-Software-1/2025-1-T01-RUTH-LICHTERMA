@@ -108,62 +108,6 @@ Conheça os membros da equipe <strong>Ruth Lichterman</strong>, estudantes dedic
   </p>
 </div>
 
----
-
-## Progresso do Projeto
-
-<div align="center">
-  <h3>Status das Entregas</h3>
-  <table style="margin: 20px auto; border-collapse: collapse; width: 80%;">
-    <tr style="background-color: #f8f9fa;">
-      <th style="padding: 12px; border: 1px solid #dee2e6; text-align: left;">Entrega</th>
-      <th style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Status</th>
-      <th style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Prazo</th>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #dee2e6;">Contextualização do Projeto</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Concluído</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Semana 2</td>
-    </tr>
-    <tr style="background-color: #f8f9fa;">
-      <td style="padding: 12px; border: 1px solid #dee2e6;">Objetivos GQM</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Em Andamento</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Semana 4</td>
-    </tr>
-    <tr>
-      <td style="padding: 12px; border: 1px solid #dee2e6;">Abstraction Sheets</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Em Andamento</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Semana 6</td>
-    </tr>
-    <tr style="background-color: #f8f9fa;">
-      <td style="padding: 12px; border: 1px solid #dee2e6;">Análise Final</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Aguardando</td>
-      <td style="padding: 12px; border: 1px solid #dee2e6; text-align: center;">Semana 8</td>
-    </tr>
-  </table>
-</div>
-
----
-
-## Contato e Links Úteis
-
-<div align="center">
-  <h3>Links Importantes</h3>
-  
-  [![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github)](https://github.com/FCTE-Qualidade-de-Software-1/2025-1-T01-RUTH-LICHTERMA)
-  [![AgroMart](https://img.shields.io/badge/AgroMart-Projeto%20Analisado-green?style=for-the-badge&logo=leaf)](https://github.com/AgroMart)
-  [![Docs](https://img.shields.io/badge/Documentação-MkDocs-blue?style=for-the-badge&logo=markdown)](https://agromart.github.io/docs/docs/intro/)
-</div>
-
-<div align="center" style="margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 10px;">
-  <p style="color: #666; margin: 0;">
-    <strong>Universidade de Brasília - Faculdade Gama</strong><br>
-    Qualidade de Software - 2025.1 - Turma 01<br>
-    Grupo Ruth Lichterman
-  </p>
-</div>
-
----
 
 ## Histórico de Versão
 
