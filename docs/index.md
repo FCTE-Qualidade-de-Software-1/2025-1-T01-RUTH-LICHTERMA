@@ -201,5 +201,3 @@ Conheça os membros da equipe <strong>Ruth Lichterman</strong>, estudantes dedic
   </tr>
 </table>
 </div>
-
-
