@@ -120,18 +120,6 @@ Conheça os membros da equipe <strong>Ruth Lichterman</strong>, estudantes dedic
     <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Autor(a)</th>
   </tr>
   <tr style="background-color: #f8f9fa;">
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.3.0</td>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">02/07/2025</td>
-    <td style="padding: 12px; border: 1px solid #ddd;">Correção do nome do grupo para Ruth Lichterman</td>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Equipe Ruth Lichterman</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.2.0</td>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">02/07/2025</td>
-    <td style="padding: 12px; border: 1px solid #ddd;">Remoção de emojis para tom mais profissional</td>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Equipe Ruth Lichterman</td>
-  </tr>
-  <tr style="background-color: #f8f9fa;">
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1.0</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">02/07/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Redesign completo da página Home com melhorias visuais e de conteúdo</td>
