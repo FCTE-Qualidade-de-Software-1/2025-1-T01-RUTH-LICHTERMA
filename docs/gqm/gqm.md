@@ -109,4 +109,5 @@ Adquiridas através da análise das perguntas e hipóteses e da consulta as ISOs
 |`1.1`|22/05/2025|Revisão|Raphael Mendes|
 |`1.2`|02/06/2025|Expansão das questões|Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo|
 |`1.3`|03/06/2025|Revisão|Leonardo Barcellos, Raphael Mendes da Silva e Breno Lucena|
+|`1.4`|02/07/2025|Exposição das métricas| Raphael Mendes da Silva|
 

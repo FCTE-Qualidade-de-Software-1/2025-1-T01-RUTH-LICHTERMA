@@ -25,7 +25,7 @@
 
 **Objetivo:** Criar Pages e terminar *abstraction sheets*.
 
-**Participantes:** Raphael Mendes da Silva e Leonardo Barcellos .
+**Participantes:** Raphael Mendes da Silva e Leonardo Barcellos.
 
 **Resultados:** Pages criado.
 
@@ -35,12 +35,26 @@
 
 **Objetivo:** Correções Pages e terminar *GQM*.
 
-**Participantes:** Luis Fernando, Dannyeclisson Rodrigo, Breno Lucena  .
+**Participantes:** Luis Fernando, Dannyeclisson Rodrigo e Breno Lucena.
 
 **Resultados:** Pages criado.
 
+## Reunião 5
+**Data:** 02 de Julho de 2025
+
+**Objetivo:** Ajeitar a fase 2 e iniciar a fase 3 e 4.
+
+**Participantes:** Luis Fernando, Dannyeclisson Rodrigo, Breno Lucena, Raphael Mendes, Leonardo Barcellos e Mateus Santos.
+
+**Resultados:** Pages atualizado:
+- Aprimoramento da Home (fase 1)
+- Aprimoramento da Contextualização (fase 1)
+- Exposição das Métricas (fase 2)
+- Início da Pesquisa do QRapid (fase 3)
 
 
 | Versão | Data | Descrição  |  Autor(a) |
 |--------|------|------------|-----------|
-| `1.0.0` | 31/05/2025 | Reunião 1, 2 e 3 |Raphael Mendes da Silva e  Leonardo Barcellos|
+| `1.0.0` | 31/05/2025 | Reuniões 1, 2 e 3 |Raphael Mendes da Silva e  Leonardo Barcellos|
+| `1.1.0` | 31/05/2025 | Reunião 4 |Luis Fernando, Dannyeclisson Rodrigo e Breno Lucena|
+| `1.1.0` | 31/05/2025 | Reunião 5 |Luis Fernando, Dannyeclisson Rodrigo, Breno Lucena, Raphael Mendes, Leonardo Barcellos e Mateus Santos|
