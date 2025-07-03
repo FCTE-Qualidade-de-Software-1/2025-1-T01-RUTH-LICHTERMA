@@ -11,6 +11,10 @@ nav:
   - Artefato GQM:
     - Objetivos: gqm/gqm.md
     - Abstraction Sheets: gqm/abstractionsheets.md
+  - Q-Rapid:
+    - Metodologia: qrapid/qrapid.md
+    - Métricas: qrapid/metricas.md
+    - Dashboard: qrapid/dashboard.html
 
 theme:
   name: material
