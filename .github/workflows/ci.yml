@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - main
+      - gqm-perguntas
 
 permissions:
   contents: read
