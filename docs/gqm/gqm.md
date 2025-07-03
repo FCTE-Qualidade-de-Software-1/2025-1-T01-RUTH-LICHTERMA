@@ -31,61 +31,42 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 
 > **Q1:** As interfaces principais do sistema atendem completamente aos requisitos funcionais?  
 > **Hipótese 1:** Pelo menos 85% das funcionalidades nas interfaces principais foram implementadas adequadamente.  
-> **Métrica:** Cobertura de Implementação Funcional (*Functional implementation coverage*)
 
 > **Q2:** As tarefas centrais (Comprar e Adicionar produtos) operam corretamente?  
 > **Hipótese 2:** 90% das operações de compra e adição de produtos executam sem erros.  
-> **Métrica:** Precisão Computacional (*Computational Accuracy*)
 
 > **Q3:** O sistema é funcionalmente adequado para usuários com conhecimento tecnológico intermediário?  
 > **Hipótese 3:** 80% dos usuários conseguem executar funcionalidades sem suporte técnico.  
-> **Métrica:** Apropriação Funcional (*Functional appropriateness*)
 
 ## Questões e Métricas - Objetivo 2: Usabilidade
 
 > **Q4:** O usuário consegue navegar pelas 8 interfaces principais sem dificuldades?  
 > **Hipótese 4:** 90% dos usuários navegam entre as interfaces sem abandonar tarefas.  
-> **Métrica:** Completude e Facillidade de Uso da Documentação do Usuário
-(*Completeness of user documentation and/or help facility*)
 
 > **Q5:** A terminologia utilizada é compreensível para usuários com conhecimento médio em CSA?  
 > **Hipótese 5:** 85% dos usuários entendem os termos relacionados à agricultura sustentável sem explicação adicional.  
-> **Métrica:** Clareza da Mensagem
-(*Message clarity*)
 
 > **Q6:** As interfaces apresentam consistência considerando os diferentes ambientes (Android/Linux)?  
 > **Hipótese 6:** 90% dos usuários percebem consistência visual e processual entre diferentes dispositivos.  
-> **Métrica:** Consistência Operacional
-(Operational Consistency)
 
 > **Q7:** Os componentes principais (textos e imagens) são facilmente compreendidos?  
 > **Hipótese 7:** 85% dos elementos visuais são interpretados corretamente sem legendas auxiliares.  
-> **Métrica:** Completude e Facillidade de Uso da Documentação do Usuário
-(*Completeness of user documentation and/or help facility*) e Clareza da Mensagem
-(*Message clarity*)
 
 > **Q8:** O usuário consegue se recuperar facilmente de erros durante as tarefas principais?        
 > **Hipótese 8:** 80% dos usuários conseguem corrigir erros sem abandonar a tarefa.  
-> **Métrica:** Prevenção a Operações Incorretas
-(*Avoidance of incorrect operation*)
 
 > **Q9:** O tempo de aprendizado é adequado considerando o conhecimento médio dos usuários em CSA?            
 > **Hipótese 9:** Tempo médio de aprendizado das funcionalidades ≤ 15 minutos.  
-> **Métrica:** Completude e Facillidade de Uso da Documentação do Usuário
-(*Completeness of user documentation and/or help facility*)
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 1: Adequação Funcional
 
-<center><p>Figura 2 - Questões e Métricas - Adequação Funcional</p></center>
-
 ![Questões e Métricas - Adequação Funcional](../assets/functional.jpg)
+<center><p>Figura 1 - Questões e Métricas - Adequação Funcional</p></center>
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 2: Usabilidade
 
-<center><p>Figura 3 - Questões e Métricas - Confiabilidade</p></center>
-
 ![Questões e Métricas - Confiabilidade](../assets/usability.jpg)
-
+<center><p>Figura 2 - Questões e Métricas - Usabilidade</p></center>
 
 ## Fontes e Heurísticas para as Questões
 
