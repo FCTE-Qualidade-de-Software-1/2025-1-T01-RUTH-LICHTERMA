@@ -94,3 +94,4 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 |`1.1`|22/05/2025|Revisão|Raphael Mendes|
 |`1.2`|02/06/2025|Expansão das questões|Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo|
 |`1.3`|03/06/2025|Revisão|Leonardo Barcellos, Raphael Mendes da Silva e Breno Lucena|
+
