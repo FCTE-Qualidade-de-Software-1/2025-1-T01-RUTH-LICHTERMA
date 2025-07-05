@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - gqm-perguntas
-
+      - main
 permissions:
   contents: read
   pages: write
