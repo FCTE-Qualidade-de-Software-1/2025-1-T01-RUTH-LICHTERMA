@@ -35,35 +35,28 @@ Este documento define as métricas coletadas através da metodologia Q-Rapid par
 - **Fonte:** Analytics de navegação
 - **Frequência de Coleta:** Diária
 
-### M5: Compreensibilidade da Terminologia CSA
-- **Descrição:** Percentual de usuários que entendem termos CSA sem explicação adicional
-- **Fórmula:** (Usuários que Compreendem / Total de Usuários) × 100
-- **Meta:** ≥ 85%
-- **Fonte:** Questionários pós-uso
-- **Frequência de Coleta:** Quinzenal
-
-### M6: Consistência entre Dispositivos
+### M5: Consistência entre Dispositivos
 - **Descrição:** Percentual de usuários que percebem consistência visual entre dispositivos
 - **Fórmula:** (Percepção Positiva / Total de Avaliações) × 100
 - **Meta:** ≥ 90%
 - **Fonte:** Testes multi-dispositivo
 - **Frequência de Coleta:** Mensal
 
-### M7: Clareza dos Elementos Visuais
+### M6: Clareza dos Elementos Visuais
 - **Descrição:** Percentual de elementos visuais interpretados corretamente
 - **Fórmula:** (Interpretações Corretas / Total de Elementos Testados) × 100
 - **Meta:** ≥ 85%
 - **Fonte:** Testes de compreensão visual
 - **Frequência de Coleta:** Quinzenal
 
-### M8: Taxa de Recuperação de Erros
+### M7: Taxa de Recuperação de Erros
 - **Descrição:** Percentual de usuários que conseguem corrigir erros sem abandonar tarefas
 - **Fórmula:** (Recuperações Bem-sucedidas / Total de Erros Encontrados) × 100
 - **Meta:** ≥ 80%
 - **Fonte:** Observação de sessões de uso
 - **Frequência de Coleta:** Semanal
 
-### M9: Tempo de Aprendizado
+### M8: Tempo de Aprendizado
 - **Descrição:** Tempo médio para usuários aprenderem as funcionalidades principais
 - **Unidade:** Minutos
 - **Meta:** ≤ 15 minutos
