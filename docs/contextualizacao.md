@@ -109,6 +109,8 @@ Esta seção apresenta um conjunto de questões fundamentais para a análise e c
 ### Q10: Quais tecnologias empregadas no projeto?
 **A10:** As tecnologias utilizadas incluem **Javascript, React**, entre outras.
 
+
+## Histórico de Versão
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
