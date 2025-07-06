@@ -58,6 +58,19 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 > **Q9:** O tempo de aprendizado é adequado considerando o conhecimento médio dos usuários em CSA?            
 > **Hipótese 9:** Tempo médio de aprendizado das funcionalidades ≤ 15 minutos.
 
+## Métricas
+Adquiridas através da análise das perguntas e hipóteses e da consulta as ISOs de família SQUARE.
+
+|ID|Nome|Objetivo|Cálculo|
+|-|-|-|-|
+|M1|Cobertura de Implementação Funcional (Functional implementation coverage)| Como completar a implementação de acordo com as especificações de requisito?|(Nº de funcionalidades nos requisitos) ÷ (Nº funcionalidades incorretas ou faltando)|
+|M2|Precisão Computacional (Computational Accuracy)| O quão frequentes são resultados errados das funções implementadas?| (Nº de operações erradas) ÷ (tempo gasto nelas)|
+|M3|Apropriação Funcional (Functional appropriateness)| Quantas funcionalidades realizam seus objetivos sem problemas?| (Nº de funções que realizam tarefas específicas) ÷ (Nº de funções com problemas)|
+|M4|Clareza da Mensagem (Message clarity)|O quão clara mensagens operacionais do sistema podem ser entendidas?| (Nº de mensagens claras) ÷ (Total de mensagens) |
+|M5|Consistência Operacional (Operational Consistency)|O quão consistentes são operações similares| (Nº de operações inconsistentes) ÷ (Nº de operações de comportamento similar) |
+|M6|Completude e Facillidade de Uso da Documentação do Usuário (Completeness of user documentation and/or help facility)|Qual a proporção da funcionalidades descritas na documentação?|(Nº de funcionalidades descritas corretamente) ÷ (Nº total de funcionalidades) |
+|M7|Prevenção a Operações Incorretas (Avoidance of incorrect operation - AIO)|Quantas funcionalidades têm prevenção a operações incorretas?| (Nº de funcionalidades que implementaram AIO) ÷ (Nº total de padrões de operações incorretas) |
+
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 1: Adequação Funcional
 
 <center><p>Figura 2 - Questões e Métricas - Adequação Funcional</p></center>
@@ -90,11 +103,40 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 > ISO 9241-110:2020 - Ergonomics of human-system interaction
 
 ## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|
-|:----:|----|---------|-----|
-|`1.0`|22/05/2025|Criação do documento|Leonardo Barcellos|
-|`1.1`|22/05/2025|Revisão|Raphael Mendes|
-|`1.2`|02/06/2025|Expansão das questões|Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo|
-|`1.3`|03/06/2025|Revisão|Leonardo Barcellos, Raphael Mendes da Silva e Breno Lucena|
+<table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th>Versão</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Autor(a)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>21/05/2025</td>
+      <td>Criação do documento</td>
+      <td>Leonardo Barcellos</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>22/05/2025</td>
+      <td>Revisão</td>
+      <td>Raphael Mendes</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>02/06/2025</td>
+      <td>Expansão das questões</td>
+      <td>Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>03/06/2025</td>
+      <td>Revisão</td>
+      <td>Leonardo Barcellos, Raphael Mendes da Silva e Breno Lucena</td>
+    </tr>
+  </tbody>
+</table>
 

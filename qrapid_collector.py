@@ -41,16 +41,24 @@ class QRapidDataCollector:
             "M4_navegacao_sucesso": random.uniform(85, 95),
             "M5_compreensao_csa": random.uniform(83, 90),
             "M6_consistencia_dispositivos": random.uniform(87, 95),
-            "M7_clareza_visual": random.uniform(84, 92),
-            "M8_recuperacao_erros": random.uniform(78, 88),
-            "M9_tempo_aprendizado": random.uniform(12, 18)
+            "M7_legibilidade_mensagens": random.uniform(35, 45),  # Crítico - da avaliação
+            "M8_descoberta_carrossel": random.uniform(25, 35),    # Crítico - da avaliação
+            "M9_compreensao_nomenclatura": random.uniform(55, 65), # Crítico - da avaliação
+            "M10_reconhecimento_icones": random.uniform(45, 55),   # Crítico - da avaliação
+            "M11_prevencao_erros": random.uniform(15, 25),         # Crítico - da avaliação
+            "M7_clareza_visual": random.uniform(84, 92),           # Mantido para histórico
+            "M8_recuperacao_erros": random.uniform(78, 88),        # Mantido para histórico
+            "M9_tempo_aprendizado": random.uniform(12, 18)         # Mantido para histórico
         }
         
         return base_metrics
     
-    def collect_real_metrics(self):
+    def collect_real_metrics(self, use_evaluation_data=False):
         """
         Método para coletar métricas reais - implementar conforme necessário
+        
+        Args:
+            use_evaluation_data (bool): Se True, usa valores baseados na avaliação específica
         """
         # TODO: Implementar coleta real de métricas
         # Exemplos de fontes:
@@ -59,18 +67,29 @@ class QRapidDataCollector:
         # - Testes automatizados
         # - Feedback de usuários
         
-        # Por enquanto, usa simulação
-        return self.simulate_metrics_collection()
+        # Por enquanto, usa simulação ou dados da avaliação
+        if use_evaluation_data:
+            print("📊 Usando valores baseados na avaliação de usabilidade...")
+            return self.define_metrics_based_on_evaluation()
+        else:
+            print("📊 Usando valores simulados...")
+            return self.simulate_metrics_collection()
     
-    def add_new_data_point(self, custom_date=None):
-        """Adiciona um novo ponto de dados"""
+    def add_new_data_point(self, custom_date=None, use_evaluation_data=False):
+        """
+        Adiciona um novo ponto de dados
+        
+        Args:
+            custom_date: Data customizada (opcional)
+            use_evaluation_data (bool): Se True, usa valores baseados na avaliação específica
+        """
         existing_data = self.load_existing_data()
         
         # Data atual ou customizada
         date = custom_date or datetime.date.today().isoformat()
         
         # Coleta métricas
-        metrics = self.collect_real_metrics()
+        metrics = self.collect_real_metrics(use_evaluation_data)
         
         # Cria novo ponto de dados
         new_data_point = {
@@ -151,23 +170,101 @@ class QRapidDataCollector:
         print(f"   • Navegação Bem-sucedida: {latest['M4_navegacao_sucesso']:.1f}% (Meta: ≥90%)")
         print(f"   • Compreensão CSA: {latest['M5_compreensao_csa']:.1f}% (Meta: ≥85%)")
         print(f"   • Consistência Dispositivos: {latest['M6_consistencia_dispositivos']:.1f}% (Meta: ≥90%)")
-        print(f"   • Clareza Visual: {latest['M7_clareza_visual']:.1f}% (Meta: ≥85%)")
-        print(f"   • Recuperação de Erros: {latest['M8_recuperacao_erros']:.1f}% (Meta: ≥80%)")
-        print(f"   • Tempo de Aprendizado: {latest['M9_tempo_aprendizado']:.1f} min (Meta: ≤15 min)")
+        
+        print("\n🔴 PROBLEMAS CRÍTICOS DA AVALIAÇÃO:")
+        if 'M7_legibilidade_mensagens' in latest:
+            print(f"   • Legibilidade Mensagens: {latest['M7_legibilidade_mensagens']:.1f}% (Meta: ≥90%)")
+        if 'M8_descoberta_carrossel' in latest:
+            print(f"   • Descoberta Carrossel: {latest['M8_descoberta_carrossel']:.1f}% (Meta: ≥85%)")
+        if 'M9_compreensao_nomenclatura' in latest:
+            print(f"   • Compreensão Nomenclatura: {latest['M9_compreensao_nomenclatura']:.1f}% (Meta: ≥95%)")
+        if 'M10_reconhecimento_icones' in latest:
+            print(f"   • Reconhecimento Ícones: {latest['M10_reconhecimento_icones']:.1f}% (Meta: ≥85%)")
+        if 'M11_prevencao_erros' in latest:
+            print(f"   • Prevenção de Erros: {latest['M11_prevencao_erros']:.1f}% (Meta: ≥80%)")
+        
+        print("\n📈 MÉTRICAS HISTÓRICAS:")
+        if 'M7_clareza_visual' in latest:
+            print(f"   • Clareza Visual: {latest['M7_clareza_visual']:.1f}% (Meta: ≥85%)")
+        if 'M8_recuperacao_erros' in latest:
+            print(f"   • Recuperação de Erros: {latest['M8_recuperacao_erros']:.1f}% (Meta: ≥80%)")
+        if 'M9_tempo_aprendizado' in latest:
+            print(f"   • Tempo de Aprendizado: {latest['M9_tempo_aprendizado']:.1f} min (Meta: ≤15 min)")
         print("="*50)
+    
+    def define_metrics_based_on_evaluation(self):
+        """
+        Define valores específicos baseados na avaliação de usabilidade realizada
+        """
+        # Valores baseados na sua avaliação específica
+        evaluation_metrics = {
+            "M1_completude_funcional": 78.0,  # Funcionalidades básicas implementadas
+            "M2_sucesso_tarefas": 82.0,       # Algumas tarefas com problemas
+            "M3_autonomia_usuario": 70.0,     # Problemas de usabilidade afetam autonomia
+            "M4_navegacao_sucesso": 75.0,     # Navegação OK, mas com problemas
+            "M5_compreensao_csa": 85.0,       # Busca de CSA bem estruturada
+            "M6_consistencia_dispositivos": 88.0,  # Boa responsividade mobile
+            
+            # Métricas específicas baseadas nos problemas identificados:
+            "M7_legibilidade_mensagens": 40.0,     # Fonte muito clara - CRÍTICO
+            "M8_descoberta_carrossel": 30.0,       # Sem indicadores visuais - CRÍTICO  
+            "M9_compreensao_nomenclatura": 60.0,   # Termos em inglês - PROBLEMA
+            "M10_reconhecimento_icones": 50.0,     # Ícones ambíguos - PROBLEMA
+            "M11_prevencao_erros": 20.0,           # Não identificados - CRÍTICO
+            "M12_contraste_visual": 45.0,          # Cores semelhantes - CRÍTICO
+            "M13_tempo_aprendizado": 25.0           # Afetado pelos problemas
+        }
+        
+        return evaluation_metrics
 
 def main():
     """Função principal para execução do script"""
     collector = QRapidDataCollector()
     
     print("🚀 Q-Rapid Data Collector - AgroMart")
+    print("="*50)
     print("Escolha uma opção:")
     print("1. Gerar dados de exemplo (30 dias)")
-    print("2. Adicionar novo ponto de dados")
-    print("3. Visualizar relatório atual")
-    print("4. Sair")
+    print("2. Adicionar novo ponto com dados simulados")
+    print("3. Adicionar novo ponto com dados da AVALIAÇÃO")
+    print("4. Visualizar relatório atual")
+    print("5. Sair")
     
     choice = input("\nOpção: ")
+    
+    if choice == "1":
+        collector.generate_sample_data()
+        print("✅ Dados de exemplo gerados!")
+        
+    elif choice == "2":
+        new_data = collector.add_new_data_point(use_evaluation_data=False)
+        print("✅ Novo ponto de dados adicionado com valores simulados!")
+        
+    elif choice == "3":
+        new_data = collector.add_new_data_point(use_evaluation_data=True)
+        print("✅ Novo ponto de dados adicionado com valores da avaliação!")
+        print("\n🚨 ATENÇÃO: Valores críticos baseados nos problemas identificados!")
+        
+    elif choice == "4":
+        collector.generate_report()
+        
+    elif choice == "5":
+        print("👋 Até logo!")
+        return
+        
+    else:
+        print("❌ Opção inválida!")
+        return
+    
+    # Pergunta se quer visualizar o dashboard
+    if choice in ["1", "2", "3"]:
+        view_dashboard = input("\n🌐 Deseja abrir o dashboard? (s/n): ")
+        if view_dashboard.lower() == 's':
+            import webbrowser
+            import os
+            dashboard_path = os.path.abspath("docs/qrapid/dashboard.html")
+            webbrowser.open(f"file://{dashboard_path}")
+            print("🌐 Dashboard aberto no navegador!")
     
     if choice == "1":
         collector.generate_sample_data(30)

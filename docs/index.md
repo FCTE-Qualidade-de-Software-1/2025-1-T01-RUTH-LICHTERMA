@@ -52,8 +52,29 @@
 </table>
 
 ## Histórico de Versão
-| Versão | Data | Descrição  |  Autor(a) |
-|--------|------|------------|-----------|
-|`1.0.0`| 31/05/2025 | Mudanças em Sobre, Link da Página e Integrantes | Raphael Mendes da Silva, Leonardo Barcellos |
+<table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th>Versão</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Autor(a)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>31/05/2025</td>
+      <td>Mudanças em Sobre, Link da Página e Integrantes</td>
+      <td>Raphael Mendes da Silva, Leonardo Barcellos</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>05/07/2025</td>
+      <td>Revisão</td>
+      <td>Leonardo Barcellos</td>
+    </tr>
+  </tbody>
+</table>
 
 

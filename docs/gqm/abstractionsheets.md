@@ -119,9 +119,33 @@
 </table>
 
 ## Histórico de Versões
-
-|Versão|Data|Descrição|Autor|
-|:----:|----|---------|-----|
-|`1.0`|22/05/2025|Criação do documento|Leonardo Barcellos|
-|`1.1`|25/05/2025|Revisão|Raphael Mendes|
-|`1.2`|03/06/2025|Revisão|Leonardo Barcellos|
+<table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th>Versão</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Autor(a)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>21/05/2025</td>
+      <td>Criação do documento</td>
+      <td>Leonardo Barcellos</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>25/05/2025</td>
+      <td>Revisão</td>
+      <td>Raphael Mendes</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>03/06/2025</td>
+      <td>Revisão</td>
+      <td>Leonardo Barcellos</td>
+    </tr>
+  </tbody>
+</table>
