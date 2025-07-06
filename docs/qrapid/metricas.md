@@ -103,23 +103,22 @@ Este documento consolida as métricas do Q-Rapid aplicadas ao projeto **AgroMart
 
 ### 🔴 Prioridade Máxima
 1. **M11 - Prevenção de Erros** (15%)  
-   - Implementar validações e mensagens de erro claras
+      - Implementar validações e mensagens de erro claras
 2. **M8 - Descoberta de Carrossel** (25%)  
-   - Adicionar indicadores visuais (pontos, setas) mais visíveis
+      - Adicionar indicadores visuais (pontos, setas) mais visíveis
 3. **M7 - Legibilidade das Mensagens** (35%)  
-   - Ajustar cor e contraste das fontes para melhor legibilidade
+      - Ajustar cor e contraste das fontes para melhor legibilidade
 4. **M10 - Reconhecimento de Ícones** (45%)  
-   - Revisar ícones e adicionar labels descritivas
+      - Revisar ícones e adicionar labels descritivas
 5. **M9 - Compreensão de Nomenclatura** (55%)
-   - Traduzir termos para português e padronizar nomenclatura
+      - Traduzir termos para português e padronizar nomenclatura
 
 
 
 
 ### 🟡 Prioridade Alta
 1. **M1 - Cobertura de Implementação Funcional** (75%)  
-   - Implementar funcionalidades completas de Cadastro, Login e Compra
-   - Disponibilizar APK funcional para instalação
+      - Disponibilizar APK funcional para instalação
 
 
 

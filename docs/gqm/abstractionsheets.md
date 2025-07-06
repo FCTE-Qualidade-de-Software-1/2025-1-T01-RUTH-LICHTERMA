@@ -42,10 +42,10 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>85% das funcionalidades nas 8 interfaces principais foram implementadas adequadamente</li>
-          <li>90% das tarefas centrais (Comprar e Adicionar produtos) operam corretamente</li>
-          <li>Tempo médio para completar tarefas críticas ≤ 5 minutos considerando nível intermediário dos usuários</li>
-          <li>80% dos usuários conseguem executar funcionalidades sem suporte técnico</li>
+          <li>75% das funcionalidades nas 8 interfaces principais foram implementadas (abaixo da meta de 85%)</li>
+          <li>70% das tarefas centrais (Comprar e Adicionar produtos) operam corretamente (abaixo da meta de 90%)</li>
+          <li>Tempo médio para completar tarefas críticas > 5 minutos devido a problemas de usabilidade</li>
+          <li>65% dos usuários conseguem executar funcionalidades sem suporte técnico (abaixo da meta de 80%)</li>
         </ul>
     </td>
     <td colspan="2">
@@ -101,10 +101,10 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>90% dos usuários navegam pelas 8 interfaces sem dificuldades</li>
-          <li>85% dos textos e imagens são compreensíveis sem suporte</li>
-          <li>Tempo médio de aprendizado ≤ 15 minutos considerando conhecimento médio em CSA</li>
-          <li>80% dos usuários completam tarefas principais sem abandonar o sistema</li>
+          <li>85% dos usuários navegam pelas 8 interfaces (meta), atual: 75%</li>
+          <li>75% dos textos e imagens são compreensíveis (abaixo da meta de 85%)</li>
+          <li>Tempo médio de aprendizado > 15 minutos devido a problemas de nomenclatura e legibilidade</li>
+          <li>65% dos usuários completam tarefas principais sem abandonar o sistema (abaixo da meta de 80%)</li>
         </ul>
     </td>
     <td colspan="2">
