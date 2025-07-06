@@ -31,23 +31,21 @@ class QRapidDataCollector:
     
     def simulate_metrics_collection(self):
         """
-        Simula a coleta de métricas - Em produção, substitua por coleta real
+        Simula a coleta de métricas baseada na avaliação real realizada
         """
-        # Simula uma pequena melhoria nas métricas ao longo do tempo
+        # Valores base da avaliação real com pequena variação para simular evolução
         base_metrics = {
-            "M1_completude_funcional": random.uniform(85, 95),
-            "M2_sucesso_tarefas": random.uniform(88, 95),
-            "M3_autonomia_usuario": random.uniform(80, 90),
-            "M4_navegacao_sucesso": random.uniform(85, 95),
-            "M5_compreensao_csa": random.uniform(83, 90),
-            "M6_consistencia_dispositivos": random.uniform(87, 95),
-            "M7_legibilidade_mensagens": random.uniform(35, 45),  # Crítico - da avaliação
-            "M8_descoberta_carrossel": random.uniform(25, 35),    # Crítico - da avaliação
-            "M9_compreensao_nomenclatura": random.uniform(55, 65), # Crítico - da avaliação
-            "M10_reconhecimento_icones": random.uniform(45, 55),   # Crítico - da avaliação
-            "M11_prevencao_erros": random.uniform(15, 25),         # Crítico - da avaliação
-            "M7_clareza_visual": random.uniform(84, 92),           # Mantido para histórico
-            "M8_recuperacao_erros": random.uniform(78, 88),        # Mantido para histórico
+            "M1_completude_funcional": random.uniform(73, 77),      # Crítico - da avaliação
+            "M2_sucesso_tarefas": random.uniform(68, 72),           # Crítico - da avaliação  
+            "M3_autonomia_usuario": random.uniform(63, 67),         # Crítico - da avaliação
+            "M4_navegacao_sucesso": random.uniform(73, 77),         # Crítico - da avaliação
+            "M5_consistencia_dispositivos": random.uniform(80, 84), # Atingido - da avaliação
+            "M7_legibilidade_mensagens": random.uniform(33, 37),    # Crítico - da avaliação
+            "M8_descoberta_carrossel": random.uniform(23, 27),      # Crítico - da avaliação
+            "M9_compreensao_nomenclatura": random.uniform(53, 57),  # Crítico - da avaliação
+            "M10_reconhecimento_icones": random.uniform(43, 47),    # Crítico - da avaliação
+            "M11_prevencao_erros": random.uniform(13, 17),          # Crítico - da avaliação
+            "M12_compreensao_csa": random.uniform(83, 87),          # Atingido - da avaliação
             "M9_tempo_aprendizado": random.uniform(12, 18)         # Mantido para histórico
         }
         

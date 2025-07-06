@@ -75,13 +75,13 @@ Adquiridas através da análise das perguntas e hipóteses e da consulta as ISOs
 
 <center><p>Figura 2 - Questões e Métricas - Adequação Funcional</p></center>
 
-![Questões e Métricas - Adequação Funcional](../assets/functional.jpg)
+![Questões e Métricas - Adequação Funcional](../assets/functional.jpeg)
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 2: Usabilidade
 
 <center><p>Figura 3 - Questões e Métricas - Confiabilidade</p></center>
 
-![Questões e Métricas - Confiabilidade](../assets/usability.jpg)
+![Questões e Métricas - Confiabilidade](../assets/usability.jpeg)
 
 
 ## Fontes e Heurísticas para as Questões
