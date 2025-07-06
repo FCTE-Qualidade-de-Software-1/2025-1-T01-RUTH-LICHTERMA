@@ -17,10 +17,11 @@ qrapid_collector.py             #  Script para coletar dados
 ```
 
 ###  Dashboard Criado
-- **9 métricas** de qualidade monitoradas
+- **12 métricas** de qualidade monitoradas baseadas na avaliação real
 - **3 gráficos interativos** (Adequação Funcional, Usabilidade, Evolução Temporal)
-- **Cards de status** com alertas visuais
+- **Cards de status** com alertas visuais por severidade
 - **Design responsivo** para mobile e desktop
+- **Dados reais** da avaliação de usabilidade
 
 ##  Sequência de Passos para Usar
 
@@ -55,24 +56,59 @@ mkdocs serve
 2. **Ajuste os dados** em `docs/qrapid/data/metrics_data.json`
 3. **Customize o visual** no `docs/qrapid/dashboard.html`
 
-##  Métricas Implementadas
+##  Métricas Implementadas (Baseadas na Avaliação Real)
 
 ###  Adequação Funcional (3 métricas)
 | Métrica | Descrição | Meta | Status Atual |
 |---------|-----------|------|--------------|
-| M1 | Completude Funcional | ≥85% | 🟢 87.5% |
-| M2 | Sucesso em Tarefas | ≥90% | 🟢 92.0% |
-| M3 | Autonomia do Usuário | ≥80% | 🟢 83.0% |
+| M1 | Completude Funcional | ≥85% | � 75% |
+| M2 | Sucesso em Tarefas | ≥90% | � 70% |
+| M3 | Autonomia do Usuário | ≥80% | � 65% |
 
-###  Usabilidade (6 métricas)
+###  Usabilidade (9 métricas)
 | Métrica | Descrição | Meta | Status Atual |
 |---------|-----------|------|--------------|
-| M4 | Navegação Bem-sucedida | ≥90% | 🟡 89.5% |
-| M5 | Compreensão CSA | ≥85% | 🟢 86.0% |
-| M6 | Consistência Dispositivos | ≥90% | 🟢 91.0% |
-| M7 | Clareza Visual | ≥85% | 🟢 88.0% |
-| M8 | Recuperação de Erros | ≥80% | 🟢 82.5% |
-| M9 | Tempo de Aprendizado | ≤15 min | 🟢 14.2 min |
+| M4 | Navegação Bem-sucedida | ≥90% | � 75% |
+| M5 | Consistência Dispositivos | ≥80% | ✅ 82% |
+| M7 | Legibilidade das Mensagens | ≥90% | 🔴 35% |
+| M8 | Descoberta de Carrossel | ≥85% | � 25% |
+| M9 | Compreensão Nomenclatura | ≥95% | � 55% |
+| M10 | Reconhecimento de Ícones | ≥85% | � 45% |
+| M11 | Prevenção de Erros | ≥80% | 🔴 15% |
+| M12 | Compreensão CSA | ≥80% | ✅ 85% |
+
+## 🚨 Problemas Críticos Identificados
+
+### **Prioridade Máxima (Status: 🔴 Crítico)**
+
+1. **M11 - Prevenção de Erros (15%)**
+   - ❌ Nenhum mecanismo de prevenção identificado
+   - ❌ Ausência de feedbacks de erro
+   - 🎯 **Ação**: Implementar validações e mensagens claras
+
+2. **M8 - Descoberta de Carrossel (25%)**
+   - ❌ Indicadores visuais quase imperceptíveis
+   - ❌ Usuário precisa descobrir funcionalidade manualmente
+   - 🎯 **Ação**: Tornar bolinhas mais visíveis
+
+3. **M7 - Legibilidade das Mensagens (35%)**
+   - ❌ Fonte com cor muito clara
+   - ❌ Dificuldade de leitura em dispositivos
+   - 🎯 **Ação**: Ajustar contraste das fontes
+
+4. **M10 - Reconhecimento de Ícones (45%)**
+   - ❌ Ícone hambúrguer sem identificação clara
+   - ❌ Confusão sobre função do ícone
+   - 🎯 **Ação**: Adicionar labels descritivas
+
+5. **M9 - Compreensão Nomenclatura (55%)**
+   - ❌ Termos em inglês (ex: "History")
+   - ❌ Público-alvo sem familiaridade com idiomas
+   - 🎯 **Ação**: Traduzir e padronizar termos
+
+### **Pontos Positivos Identificados**
+- ✅ **M12 - Compreensão CSA (85%)**: Interface de busca bem estruturada
+- ✅ **M5 - Consistência Dispositivos (82%)**: Boa responsividade mobile
 
 ##  Como Coletar Dados Reais
 
@@ -139,9 +175,10 @@ jobs:
 
 ### Nível Intermediário
 - [ ] Conectar com dados reais do AgroMart
-- [ ] Implementar alertas automáticos
+- [ ] Implementar alertas automáticos para métricas críticas
 - [ ] Adicionar histórico de 6 meses
 - [ ] Criar relatórios PDF automáticos
+- [ ] **Prioridade**: Corrigir problemas de usabilidade identificados
 
 ### Nível Avançado
 - [ ] Machine Learning para previsões

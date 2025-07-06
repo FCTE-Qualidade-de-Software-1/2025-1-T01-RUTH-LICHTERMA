@@ -15,6 +15,7 @@ nav:
   - Q-Rapid:
     - Metodologia: qrapid/qrapid.md
     - Métricas: qrapid/metricas.md
+    - Configuração: qrapid/config_metricas.md
     - Dashboard: qrapid/dashboard.html
 
 theme:

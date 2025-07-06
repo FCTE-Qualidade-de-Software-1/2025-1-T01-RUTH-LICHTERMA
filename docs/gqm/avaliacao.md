@@ -4,76 +4,88 @@
 
 ### Cobertura de Implementação Funcional (M1)
 
-- (F1) Cadastro: não tem como verificarmos. 
-- (F2) Login: não tem como verificarmos.
-- (F3) Instalar:
-    - não tem aplicativo nas lojas oficiais
-    - não tem APK pronto
-    - o tutorial de parte do deploy está num repositório separado das aplicações ([Ajuda Agromart](https://github.com/AgroMart/ajuda-agromart)).
-- (F4) Usar:
-    - 
-- (F5) Comprar:
-    - 
+- **(F1) Cadastro**: não foi possível verificar, pois não há ambiente de testes funcional disponível.  
+- **(F2) Login**: não foi possível verificar o fluxo completo, considerando apenas as capturas de tela.  
+- **(F3) Instalação**:
+  - Não há aplicativo publicado em lojas oficiais (Google Play, App Store).  
+  - Não existe um APK pronto para download direto.  
+  - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).  
+- **(F4) Uso**: não pôde ser avaliado de forma completa devido à ausência de ambiente interativo funcional.  
+- **(F5) Compra**: não foi possível verificar as operações de compra em funcionamento, considerando que apenas as telas estáticas foram fornecidas.  
 
 
 ## Avaliação de Usabilidade - Observações
+
 ### Clareza das Mensagens (M4)
 
-- As descrições dos menus apresentam uma fonte com cor muito clara, o que dificulta a leitura.  
+- As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
 <center>
-![Questões e Métricas - Confiabilidade](../assets/tela-com-texto-ruim.jpeg)
+![Fonte clara](../assets/tela-com-texto-ruim.jpeg)
+</center>
+<center>
+**Figura 1**: Tela de Inicial
 </center>
 
-- Na primeira tela há um carrossel de imagens, mas o usuário não tem indícios visuais de que se trata de um carrossel — é necessário arrastar manualmente para descobrir as outras imagens.
+- Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center>
-![Questões e Métricas - Confiabilidade](../assets/carrossel.jpeg)
+![Carrossel sem indicador](../assets/carrossel.jpeg)
+</center>
+<center>
+**Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
 </center>
 
 
-*Figura 1: Tela inicial do aplicativo mostrando o carrossel sem indicadores visuais*
+- A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
-- A tela de busca de CSA está bem estruturada, com imagens de pontos específicos de cada Região Administrativa acompanhadas do respectivo nome, o que facilita a compreensão.
+<center>
+![CSA](../assets/csa.jpeg)
+</center>
+<center>
+**Figura 3**: Tela de csa 
+</center>
 
 ### Nomenclatura em Inglês
 
-- Alguns termos no aplicativo estão em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem contato com outros idiomas.  
+- Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem familiaridade com outros idiomas.
 
-<center>![Questões e Métricas - Confiabilidade](../assets/home.jpeg)</center>
+<center>
+![Termo em inglês](../assets/home.jpeg)
+</center>
 
+<center>
+![Busca](../assets/search.jpeg)
+</center>
 
-<center>![Questões e Métricas - Confiabilidade](../assets/search.jpeg)</center>
+- O ícone da tela de histórico é representado por três linhas (menu tipo hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como “Histórico”.
 
-
-- O ícone da tela de histórico é representado por três linhas (menu hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como histórico.
-
----
 
 ## Consistência Operacional (M5)
 
 - O aplicativo apresenta boa responsividade e funcionamento consistente no ambiente mobile, o que é positivo.
 
----
 
 ## Completude e Facilidade de Uso da Documentação (M6)
 
-- O usuário, em geral, consegue acessar e navegar pelas telas, entendendo os textos e imagens disponíveis.  
-- Contudo, a nomenclatura em inglês pode ser um obstáculo para alguns usuários, prejudicando a completude e facilidade de uso.
+- De forma geral, o usuário consegue acessar e navegar pelas telas, compreendendo os textos e imagens apresentados.  
+- Contudo, a utilização de termos estrangeiros pode ser um obstáculo para alguns usuários, prejudicando a completude e a facilidade de uso.
 
----
 
 ## Tempo de Aprendizado
 
 - O tempo de aprendizado depende do perfil do usuário.  
-- O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, especialmente para usuários com limitações cognitivas ou baixa visão.
+- O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão.
 
-<center>![Questões e Métricas - Confiabilidade](../assets/historico.jpeg)
+<center>
+![Histórico](../assets/historico.jpeg)
 </center>
+
 
 ## Prevenção para Operações Incorretas (M7)
 
-- Ainda não foram identificados mecanismos de prevenção de operações incorretas ou feedback de erros claros no sistema. Seria interessante mapear esses pontos futuramente.
+- Ainda não foram identificados mecanismos claros de prevenção a operações incorretas, tampouco feedbacks de erro visíveis no sistema. Recomenda-se mapear esses pontos futuramente para aumentar a segurança operacional e evitar falhas de uso.
+
 
 
 ## Histórico de Versão
@@ -102,3 +114,18 @@
     </tr>
   </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
