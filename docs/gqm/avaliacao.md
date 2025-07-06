@@ -70,7 +70,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center>
-<img src="../assets/carrossel.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../assets/carrossel.jpeg" alt="Carrossel" widht="300"/>
 </center>
 <center>
 **Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
@@ -82,7 +82,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
 <center>
-<img src="../assets/csa.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../assets/csa.jpeg" alt="Tela de CSA" widht="300"/>
 </center>
 <center>
 **Figura 3**: Tela de csa 
@@ -94,17 +94,17 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem familiaridade com outros idiomas.
 
 <center>
-<img src="../assets/home.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../assets/home.jpeg" alt="Home" widht="300"/>
 </center>
 
 <center>
-<img src="../assets/search.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../assets/search.jpeg" alt="Search" widht="300"/>
 </center>
 
 - O ícone da tela de histórico é representado por três linhas (menu tipo hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como "Histórico".
 
 <center>
-<img src="../assets/historico.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../assets/historico.jpeg" alt="Historico" widht="300"/>
 </center>
 
 
