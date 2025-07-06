@@ -1,5 +1,40 @@
 # Avaliação
 
+## Planejamento da Avaliação
+
+### 1. Objetivo da Avaliação
+Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabilidade, identificando pontos críticos e oportunidades de melhoria, utilizando métricas baseadas no modelo GQM.
+
+### 2. Escopo
+- Funcionalidades principais do aplicativo (Cadastro, Login, Instalação, Uso, Compra)
+- Usabilidade (legibilidade, navegação, nomenclatura, prevenção de erros, consistência, etc.)
+
+### 3. Métricas a serem avaliadas
+- M1: Completude Funcional
+- M4: Navegação
+- M5: Consistência entre Dispositivos
+- M7: Legibilidade das Mensagens
+- M8: Descoberta de Carrossel
+- M9: Compreensão de Nomenclatura
+- M10: Clareza dos Ícones
+- M11: Prevenção de Erros
+- M12: Compreensão CSA
+
+### 4. Metodologia
+- **Revisão de documentação:** Analisar requisitos, fluxos e telas fornecidas.
+- **Testes exploratórios:** Navegar pelo sistema (quando possível) para identificar problemas de usabilidade e funcionalidade.
+- **Análise de capturas de tela:** Avaliar funcionalidades e usabilidade a partir das imagens fornecidas.
+- **Checklist de métricas:** Preencher tabela de métricas com valor atual, meta, status e justificativa.
+
+### 5. Critérios de Aceite
+- Todas as métricas críticas (🔴) devem ter plano de ação definido.
+- Métricas com status "Atingido" (✅) devem ser documentadas como boas práticas.
+- O relatório deve conter evidências (prints, tabelas, justificativas).
+
+### 6. Ações Futuras
+- Propor melhorias para os pontos críticos identificados (ex: melhorar contraste de fontes, traduzir termos, adicionar feedback de erro).
+
+
 ## Avaliação de Adequação Funcional - Observações
 
 ### M1 - Cobertura de Implementação Funcional
@@ -136,6 +171,11 @@
       <td>06/07/2025</td>
       <td>Alinhamento com métricas Q-Rapid e organização por métricas</td>
       <td>Breno Lucena</td>
+    </tr><tr>
+      <td>1.3</td>
+      <td>06/07/2025</td>
+      <td>Adição do planejamento de avaliação</td>
+      <td>Dannyeclisson</td>
     </tr>
   </tbody>
 </table>
