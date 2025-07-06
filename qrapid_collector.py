@@ -33,24 +33,24 @@ class QRapidDataCollector:
         """
         Simula a coleta de métricas baseada na avaliação real realizada
         """
-        # Valores base da avaliação real com pequena variação para simular evolução
         base_metrics = {
-            "M1_completude_funcional": random.uniform(73, 77),      # Crítico - da avaliação
-            "M2_sucesso_tarefas": random.uniform(68, 72),           # Crítico - da avaliação  
-            "M3_autonomia_usuario": random.uniform(63, 67),         # Crítico - da avaliação
-            "M4_navegacao_sucesso": random.uniform(73, 77),         # Crítico - da avaliação
-            "M5_consistencia_dispositivos": random.uniform(80, 84), # Atingido - da avaliação
-            "M7_legibilidade_mensagens": random.uniform(33, 37),    # Crítico - da avaliação
-            "M8_descoberta_carrossel": random.uniform(23, 27),      # Crítico - da avaliação
-            "M9_compreensao_nomenclatura": random.uniform(53, 57),  # Crítico - da avaliação
-            "M10_reconhecimento_icones": random.uniform(43, 47),    # Crítico - da avaliação
-            "M11_prevencao_erros": random.uniform(13, 17),          # Crítico - da avaliação
-            "M12_compreensao_csa": random.uniform(83, 87),          # Atingido - da avaliação
-            "M9_tempo_aprendizado": random.uniform(12, 18)         # Mantido para histórico
+            "M1_completude_funcional": random.uniform(73, 77),
+            "M2_sucesso_tarefas": random.uniform(68, 72),
+            "M3_autonomia_usuario": random.uniform(63, 67),
+            "M4_navegacao_sucesso": random.uniform(73, 77),
+            "M5_compreensao_csa": random.uniform(80, 85),
+            "M6_consistencia_dispositivos": random.uniform(80, 85),
+            "M7_legibilidade_mensagens": random.uniform(33, 37),
+            "M8_descoberta_carrossel": random.uniform(23, 27),
+            "M9_compreensao_nomenclatura": random.uniform(53, 57),
+            "M10_reconhecimento_icones": random.uniform(43, 47),
+            "M11_prevencao_erros": random.uniform(13, 17),
+            "M12_compreensao_csa": random.uniform(83, 87),
+            "M13_tempo_aprendizado": random.uniform(12, 18)
         }
-        
         return base_metrics
-    
+            
+        
     def collect_real_metrics(self, use_evaluation_data=False):
         """
         Método para coletar métricas reais - implementar conforme necessário
@@ -113,31 +113,30 @@ class QRapidDataCollector:
         """Gera dados de exemplo para demonstração"""
         data = []
         start_date = datetime.date.today() - datetime.timedelta(days=days)
-        
+
         for i in range(days):
             current_date = start_date + datetime.timedelta(days=i)
-            
-            # Simula melhoria gradual ao longo do tempo
-            improvement_factor = 1 + (i / days) * 0.1  # Melhoria de até 10%
-            
             metrics = {
                 "date": current_date.isoformat(),
-                "M1_completude_funcional": min(95, 75 + (i * 0.5)),
-                "M2_sucesso_tarefas": min(95, 85 + (i * 0.3)),
-                "M3_autonomia_usuario": min(90, 75 + (i * 0.4)),
-                "M4_navegacao_sucesso": min(95, 80 + (i * 0.4)),
-                "M5_compreensao_csa": min(90, 78 + (i * 0.3)),
-                "M6_consistencia_dispositivos": min(95, 82 + (i * 0.4)),
-                "M7_clareza_visual": min(92, 79 + (i * 0.35)),
-                "M8_recuperacao_erros": min(88, 73 + (i * 0.4)),
-                "M9_tempo_aprendizado": max(10, 20 - (i * 0.2))
+                "M1_completude_funcional": min(95, 75 + i * 0.5),
+                "M2_sucesso_tarefas": min(95, 85 + i * 0.3),
+                "M3_autonomia_usuario": min(90, 75 + i * 0.4),
+                "M4_navegacao_sucesso": min(95, 80 + i * 0.4),
+                "M5_compreensao_csa": min(90, 78 + i * 0.3),
+                "M6_consistencia_dispositivos": min(95, 82 + i * 0.4),
+                "M7_legibilidade_mensagens": max(30, 35 + i * 0.5),
+                "M8_descoberta_carrossel": max(20, 25 + i * 0.6),
+                "M9_compreensao_nomenclatura": max(50, 55 + i * 0.4),
+                "M10_reconhecimento_icones": max(40, 45 + i * 0.4),
+                "M11_prevencao_erros": max(10, 15 + i * 0.5),
+                "M12_compreensao_csa": min(95, 85 + i * 0.2),
+                "M13_tempo_aprendizado": max(10, 20 - i * 0.2)
             }
             data.append(metrics)
-        
-        # Salva dados
+
         with open(self.data_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        
+
         print(f"✅ Gerados {days} dias de dados de exemplo")
         return data
     

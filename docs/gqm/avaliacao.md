@@ -23,7 +23,7 @@
 - As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
 <center>
-![Fonte clara](../assets/tela-com-texto-ruim.jpeg)
+![Fonte clara](.)
 </center>
 <center>
 **Figura 1**: Tela de Inicial
@@ -35,7 +35,7 @@
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center>
-![Carrossel sem indicador](../assets/carrossel.jpeg)
+![Carrossel sem indicador](/docs/assets/carrossel.jpeg)
 </center>
 <center>
 **Figura 2**: Tela inicial do aplicativo mostrando o carrossel 

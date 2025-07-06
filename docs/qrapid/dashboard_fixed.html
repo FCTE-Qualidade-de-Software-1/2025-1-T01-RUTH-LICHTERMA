@@ -179,7 +179,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎯 Q-Rapid Dashboard</h1>
+            <h1> Q-Rapid Dashboard</h1>
             <p>Monitoramento de Qualidade do Software AgroMart</p>
             <p><small>Última atualização: <span id="lastUpdate"></span></small></p>
         </div>
@@ -190,98 +190,138 @@
         
         <div class="charts-section">
             <div class="chart-container">
-                <div class="chart-title">📊 Adequação Funcional</div>
+                <div class="chart-title"> Adequação Funcional</div>
                 <canvas id="functionalChart"></canvas>
             </div>
             
             <div class="chart-container">
-                <div class="chart-title">🎨 Métricas de Usabilidade</div>
+                <div class="chart-title"> Usabilidade</div>
                 <canvas id="usabilityChart"></canvas>
             </div>
             
             <div class="chart-container full-width">
-                <div class="chart-title">📈 Evolução das Métricas Críticas</div>
+                <div class="chart-title"> Evolução Temporal das Métricas</div>
                 <canvas id="timelineChart"></canvas>
             </div>
         </div>
         
         <div class="legend">
-            <h3>📋 Legenda das Métricas</h3>
-            <div class="legend-grid" id="legendGrid">
-                <!-- Legenda será gerada dinamicamente -->
+            <h3> Legenda das Métricas</h3>
+            <div class="legend-grid">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #36A2EB;"></div>
+                    <span><strong>M1:</strong> Completude Funcional</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FF6384;"></div>
+                    <span><strong>M2:</strong> Sucesso em Tarefas</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4BC0C0;"></div>
+                    <span><strong>M3:</strong> Autonomia do Usuário</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FFCE56;"></div>
+                    <span><strong>M4:</strong> Navegação Bem-sucedida</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #9966FF;"></div>
+                    <span><strong>M5:</strong> Compreensão CSA</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FF9F40;"></div>
+                    <span><strong>M6:</strong> Consistência entre Dispositivos</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FF6B6B;"></div>
+                    <span><strong>M7:</strong> Clareza Visual</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4ECDC4;"></div>
+                    <span><strong>M8:</strong> Recuperação de Erros</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #45B7D1;"></div>
+                    <span><strong>M9:</strong> Tempo de Aprendizado (min)</span>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Carregar dados das métricas
-        async function loadMetricsData() {
-            try {
-                const response = await fetch('./data/metrics_data.json');
-                if (!response.ok) {
-                    throw new Error('Dados não encontrados');
-                }
-                const data = await response.json();
-                // Retorna o último item do array (dados mais recentes)
-                return Array.isArray(data) ? data[data.length - 1] : data;
-            } catch (error) {
-                console.warn('Usando dados simulados:', error);
-                // Dados simulados baseados na avaliação de usabilidade
-                return {
-                    "date": "2025-07-05",
-                    "M1_completude_funcional": 78.0,
-                    "M2_sucesso_tarefas": 82.0,
-                    "M3_autonomia_usuario": 70.0,
-                    "M4_navegacao_sucesso": 75.0,
-                    "M5_compreensao_csa": 85.0,
-                    "M6_consistencia_dispositivos": 88.0,
-                    "M7_legibilidade_mensagens": 40.0,
-                    "M8_descoberta_carrossel": 30.0,
-                    "M9_compreensao_nomenclatura": 60.0,
-                    "M10_reconhecimento_icones": 50.0,
-                    "M11_prevencao_erros": 20.0,
-                    "M12_contraste_visual": 45.0,
-                    "M13_tempo_aprendizado": 25.0
-                };
+        // Dados simulados - em um cenário real, estes viriam de uma API
+        const metricsData = [
+            {
+                date: "2025-06-01",
+                M1_completude_funcional: 82.0,
+                M2_sucesso_tarefas: 88.5,
+                M3_autonomia_usuario: 79.0,
+                M4_navegacao_sucesso: 85.0,
+                M5_compreensao_csa: 83.0,
+                M6_consistencia_dispositivos: 87.5,
+                M7_clareza_visual: 84.0,
+                M8_recuperacao_erros: 78.5,
+                M9_tempo_aprendizado: 16.8
+            },
+            {
+                date: "2025-06-15",
+                M1_completude_funcional: 85.0,
+                M2_sucesso_tarefas: 90.0,
+                M3_autonomia_usuario: 81.0,
+                M4_navegacao_sucesso: 87.5,
+                M5_compreensao_csa: 84.5,
+                M6_consistencia_dispositivos: 89.0,
+                M7_clareza_visual: 86.0,
+                M8_recuperacao_erros: 80.0,
+                M9_tempo_aprendizado: 15.5
+            },
+            {
+                date: "2025-07-01",
+                M1_completude_funcional: 87.5,
+                M2_sucesso_tarefas: 92.0,
+                M3_autonomia_usuario: 83.0,
+                M4_navegacao_sucesso: 89.5,
+                M5_compreensao_csa: 86.0,
+                M6_consistencia_dispositivos: 91.0,
+                M7_clareza_visual: 88.0,
+                M8_recuperacao_erros: 82.5,
+                M9_tempo_aprendizado: 14.2
             }
-        }
+        ];
 
-        // Configuração das métricas
+        // Configuração dos nomes das métricas
         const metricNames = {
-            M1_completude_funcional: { name: "Completude Funcional", unit: "%", target: 85, color: "#36A2EB" },
-            M2_sucesso_tarefas: { name: "Sucesso em Tarefas", unit: "%", target: 90, color: "#FF6384" },
-            M3_autonomia_usuario: { name: "Autonomia do Usuário", unit: "%", target: 80, color: "#4BC0C0" },
-            M4_navegacao_sucesso: { name: "Navegação Bem-sucedida", unit: "%", target: 90, color: "#FFCE56" },
-            M5_compreensao_csa: { name: "Compreensão CSA", unit: "%", target: 80, color: "#9966FF" },
-            M6_consistencia_dispositivos: { name: "Consistência Dispositivos", unit: "%", target: 90, color: "#FF9F40" },
-            M7_legibilidade_mensagens: { name: "Legibilidade Mensagens", unit: "%", target: 90, color: "#FF6B6B" },
-            M8_descoberta_carrossel: { name: "Descoberta Carrossel", unit: "%", target: 85, color: "#4ECDC4" },
-            M9_compreensao_nomenclatura: { name: "Compreensão Nomenclatura", unit: "%", target: 95, color: "#45B7D1" },
-            M10_reconhecimento_icones: { name: "Reconhecimento Ícones", unit: "%", target: 85, color: "#96CEB4" },
-            M11_prevencao_erros: { name: "Prevenção de Erros", unit: "%", target: 80, color: "#FFEAA7" },
-            M12_contraste_visual: { name: "Contraste Visual", unit: "%", target: 95, color: "#DDA0DD" },
-            M13_tempo_aprendizado: { name: "Tempo Aprendizado", unit: "min", target: 15, invert: true, color: "#F39C12" }
+            M1_completude_funcional: { name: "Completude Funcional", unit: "%", target: 85 },
+            M2_sucesso_tarefas: { name: "Sucesso em Tarefas", unit: "%", target: 90 },
+            M3_autonomia_usuario: { name: "Autonomia do Usuário", unit: "%", target: 80 },
+            M4_navegacao_sucesso: { name: "Navegação Bem-sucedida", unit: "%", target: 90 },
+            M5_compreensao_csa: { name: "Compreensão CSA", unit: "%", target: 85 },
+            M6_consistencia_dispositivos: { name: "Consistência Dispositivos", unit: "%", target: 90 },
+            M7_legibilidade_mensagens: { name: "Legibilidade Mensagens", unit: "%", target: 90 },
+            M8_descoberta_carrossel: { name: "Descoberta Carrossel", unit: "%", target: 85 },
+            M9_compreensao_nomenclatura: { name: "Compreensão Nomenclatura", unit: "%", target: 95 },
+            M10_reconhecimento_icones: { name: "Reconhecimento Ícones", unit: "%", target: 85 },
+            M11_prevencao_erros: { name: "Prevenção de Erros", unit: "%", target: 80 },
+            M12_contraste_visual: { name: "Contraste Visual", unit: "%", target: 85 },
+            M13_tempo_aprendizado: { name: "Tempo de Aprendizado", unit: "min", target: 15, invert: true }
         };
 
         // Função para determinar o status da métrica
         function getMetricStatus(value, target, invert = false) {
-            if (invert) {
-                return value <= target ? 'good' : value <= target * 1.2 ? 'warning' : 'poor';
-            } else {
-                return value >= target ? 'good' : value >= target * 0.8 ? 'warning' : 'poor';
-            }
+            const threshold = invert ? 
+                (value <= target ? 'good' : value <= target * 1.2 ? 'warning' : 'poor') :
+                (value >= target ? 'good' : value >= target * 0.8 ? 'warning' : 'poor');
+            return threshold;
         }
 
         // Função para criar cards de métricas
-        function createMetricCards(data) {
+        function createMetricCards() {
             const container = document.getElementById('metricsOverview');
-            container.innerHTML = '';
+            const latestData = metricsData[metricsData.length - 1];
             
             Object.keys(metricNames).forEach(key => {
                 const metric = metricNames[key];
-                const value = data[key];
-                if (value === undefined) return;
-                
+                const value = latestData[key];
                 const status = getMetricStatus(value, metric.target, metric.invert);
                 
                 const card = document.createElement('div');
@@ -291,17 +331,17 @@
                     <div class="metric-value">${value}${metric.unit}</div>
                     <div class="metric-status status-${status}">
                         ${status === 'good' ? '✅ Meta Atingida' : 
-                          status === 'warning' ? '⚠️ Atenção' : '❌ Crítico'}
+                          status === 'warning' ? '⚠️ Atenção' : '❌ Abaixo da Meta'}
                     </div>
-                    <small style="color: #666;">Meta: ${metric.target}${metric.unit}</small>
                 `;
                 container.appendChild(card);
             });
         }
 
         // Função para criar gráfico de adequação funcional
-        function createFunctionalChart(data) {
+        function createFunctionalChart() {
             const ctx = document.getElementById('functionalChart').getContext('2d');
+            const latestData = metricsData[metricsData.length - 1];
             
             new Chart(ctx, {
                 type: 'doughnut',
@@ -309,9 +349,9 @@
                     labels: ['Completude Funcional', 'Sucesso em Tarefas', 'Autonomia do Usuário'],
                     datasets: [{
                         data: [
-                            data.M1_completude_funcional || 0,
-                            data.M2_sucesso_tarefas || 0,
-                            data.M3_autonomia_usuario || 0
+                            latestData.M1_completude_funcional,
+                            latestData.M2_sucesso_tarefas,
+                            latestData.M3_autonomia_usuario
                         ],
                         backgroundColor: ['#36A2EB', '#FF6384', '#4BC0C0'],
                         borderWidth: 0
@@ -329,41 +369,33 @@
         }
 
         // Função para criar gráfico de usabilidade
-        function createUsabilityChart(data) {
+        function createUsabilityChart() {
             const ctx = document.getElementById('usabilityChart').getContext('2d');
+            const latestData = metricsData[metricsData.length - 1];
             
             new Chart(ctx, {
                 type: 'radar',
                 data: {
                     labels: [
-                        'Legibilidade',
-                        'Carrossel',
-                        'Nomenclatura', 
-                        'Ícones',
-                        'Prevenção Erros',
-                        'Contraste'
+                        'Navegação',
+                        'Compreensão CSA',
+                        'Consistência',
+                        'Clareza Visual',
+                        'Recuperação Erros'
                     ],
                     datasets: [{
-                        label: 'Valores Atuais',
+                        label: 'Usabilidade Atual',
                         data: [
-                            data.M7_legibilidade_mensagens || 0,
-                            data.M8_descoberta_carrossel || 0,
-                            data.M9_compreensao_nomenclatura || 0,
-                            data.M10_reconhecimento_icones || 0,
-                            data.M11_prevencao_erros || 0,
-                            data.M12_contraste_visual || 0
+                            latestData.M4_navegacao_sucesso,
+                            latestData.M5_compreensao_csa,
+                            latestData.M6_consistencia_dispositivos,
+                            latestData.M7_clareza_visual,
+                            latestData.M8_recuperacao_erros
                         ],
                         backgroundColor: 'rgba(102, 126, 234, 0.2)',
                         borderColor: '#667eea',
                         borderWidth: 2,
                         pointBackgroundColor: '#667eea'
-                    }, {
-                        label: 'Metas',
-                        data: [90, 85, 95, 85, 80, 95],
-                        backgroundColor: 'rgba(255, 99, 132, 0.1)',
-                        borderColor: '#ff6384',
-                        borderWidth: 1,
-                        pointBackgroundColor: '#ff6384'
                     }]
                 },
                 options: {
@@ -379,41 +411,28 @@
         }
 
         // Função para criar gráfico de evolução temporal
-        function createTimelineChart(data) {
+        function createTimelineChart() {
             const ctx = document.getElementById('timelineChart').getContext('2d');
             
-            // Simular evolução temporal das métricas críticas
-            const dates = ['01/06', '15/06', '01/07', '05/07'];
-            const criticalMetrics = [
-                'M7_legibilidade_mensagens', 
-                'M8_descoberta_carrossel', 
-                'M11_prevencao_erros', 
-                'M12_contraste_visual'
-            ];
-            
-            const datasets = criticalMetrics.map(key => {
-                const metric = metricNames[key];
-                const currentValue = data[key] || 0;
-                
-                return {
-                    label: metric.name,
-                    data: [
-                        Math.max(0, currentValue - 10),
-                        Math.max(0, currentValue - 7), 
-                        Math.max(0, currentValue - 3),
-                        currentValue
-                    ],
-                    borderColor: metric.color,
-                    backgroundColor: metric.color + '20',
-                    tension: 0.4,
-                    fill: false
-                };
-            });
+            const datasets = [
+                { key: 'M1_completude_funcional', color: '#36A2EB' },
+                { key: 'M2_sucesso_tarefas', color: '#FF6384' },
+                { key: 'M4_navegacao_sucesso', color: '#FFCE56' },
+                { key: 'M5_compreensao_csa', color: '#9966FF' },
+                { key: 'M6_consistencia_dispositivos', color: '#FF9F40' }
+            ].map(item => ({
+                label: metricNames[item.key].name,
+                data: metricsData.map(d => d[item.key]),
+                borderColor: item.color,
+                backgroundColor: item.color + '20',
+                tension: 0.4,
+                fill: false
+            }));
 
             new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: dates,
+                    labels: metricsData.map(d => new Date(d.date).toLocaleDateString('pt-BR')),
                     datasets: datasets
                 },
                 options: {
@@ -433,23 +452,6 @@
             });
         }
 
-        // Função para criar legenda
-        function createLegend() {
-            const container = document.getElementById('legendGrid');
-            container.innerHTML = '';
-            
-            Object.keys(metricNames).forEach(key => {
-                const metric = metricNames[key];
-                const item = document.createElement('div');
-                item.className = 'legend-item';
-                item.innerHTML = `
-                    <div class="legend-color" style="background: ${metric.color};"></div>
-                    <span><strong>${key.replace('_', ' ').toUpperCase()}:</strong> ${metric.name}</span>
-                `;
-                container.appendChild(item);
-            });
-        }
-
         // Função para atualizar timestamp
         function updateTimestamp() {
             document.getElementById('lastUpdate').textContent = 
@@ -457,38 +459,12 @@
         }
 
         // Inicializar dashboard
-        document.addEventListener('DOMContentLoaded', async function() {
+        document.addEventListener('DOMContentLoaded', function() {
             updateTimestamp();
-            
-            try {
-                const data = await loadMetricsData();
-                console.log('Dados carregados:', data);
-                createMetricCards(data);
-                createFunctionalChart(data);
-                createUsabilityChart(data);
-                createTimelineChart(data);
-                createLegend();
-            } catch (error) {
-                console.error('Erro ao carregar dashboard:', error);
-                // Mesmo em caso de erro, tenta mostrar os dados simulados
-                const fallbackData = {
-                    "date": "2025-07-05",
-                    "M1_completude_funcional": 78.0,
-                    "M2_sucesso_tarefas": 82.0,
-                    "M3_autonomia_usuario": 70.0,
-                    "M7_legibilidade_mensagens": 40.0,
-                    "M8_descoberta_carrossel": 30.0,
-                    "M9_compreensao_nomenclatura": 60.0,
-                    "M10_reconhecimento_icones": 50.0,
-                    "M11_prevencao_erros": 20.0,
-                    "M12_contraste_visual": 45.0
-                };
-                createMetricCards(fallbackData);
-                createFunctionalChart(fallbackData);
-                createUsabilityChart(fallbackData);
-                createTimelineChart(fallbackData);
-                createLegend();
-            }
+            createMetricCards();
+            createFunctionalChart();
+            createUsabilityChart();
+            createTimelineChart();
         });
     </script>
 </body>

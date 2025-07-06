@@ -4,18 +4,30 @@ site_description: Documentação do projeto do grupo Betty Snyder de Qualidade d
 repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2025-1-T01-RUTH-LICHTERMA/tree/main
 repo_name: 2025-1-T01-RUTH-LICHTERMA
 
+not_in_nav: |
+  qrapid/dashboard_fixed.html
+
+
 nav:
   - Home: index.md
-  - Atas de Reunião: reunioes.md
-  - Contextualização: contextualizacao.md
-  - Artefato GQM:
-    - Objetivos: gqm/gqm.md
-    - Abstraction Sheets: gqm/abstractionsheets.md
-    - Avaliação das Métricas: gqm/avaliacao.md
-  - Q-Rapid:
+  - Organização:
+    - Backlog: organizacao/backlog.md
+    - Registro de Reuniões: organizacao/reunioes.md
+    - Tabela de Contribuição: organizacao/contribuicao.md
+    - Métricas PSM-CID: organizacao/psm-cid.md
+  - Fase 1:
+    - Contextualização: contextualizacao.md
     - Q-rapid: qrapid/qrapid.md
-    - Métricas: qrapid/metricas.md
-    - Dashboard: qrapid/dashboard_fixed.html
+  - Fases 2 e 3:
+    - Objetivos: gqm/objetivos.md
+    - Questões e Hipóteses: gqm/questoes.md
+    - Abstraction Sheets: gqm/abstractionsheets.md
+    - Definição das Métricas (GQM): gqm/metricas.md
+  - Fase 4:
+    - Avaliação das Métricas: gqm/avaliacao.md
+    - Definição das Métricas (Q-Rapids): qrapid/metricas.md
+    - Q-Rapids Dashboard: qrapid/dashboard.md
+
 
 theme:
   name: material
@@ -28,13 +40,13 @@ theme:
     toggle:
       icon: material/brightness-7 
       name: Clique para trocar para Modo Escuro
-    primary: teal
+    primary: dark-blue
 
   - scheme: slate
     toggle:
       icon: material/brightness-4
       name: Clique para trocar para Alto Contraste
-    primary: teal
+    primary: dark-blue
 
   - scheme: high-contrast
     primary: black
