@@ -59,17 +59,28 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 > **Hipótese 9:** Tempo médio de aprendizado das funcionalidades ≤ 15 minutos.
 
 ## Métricas
-Adquiridas através da análise das perguntas e hipóteses e da consulta as ISOs de família SQUARE.
+Definidas através da análise das perguntas e hipóteses e da consulta às ISOs de família SQUARE.
 
-|ID|Nome|Objetivo|Cálculo|
-|-|-|-|-|
-|M1|Cobertura de Implementação Funcional (Functional implementation coverage)| Como completar a implementação de acordo com as especificações de requisito?|(Nº de funcionalidades nos requisitos) ÷ (Nº funcionalidades incorretas ou faltando)|
-|M2|Precisão Computacional (Computational Accuracy)| O quão frequentes são resultados errados das funções implementadas?| (Nº de operações erradas) ÷ (tempo gasto nelas)|
-|M3|Apropriação Funcional (Functional appropriateness)| Quantas funcionalidades realizam seus objetivos sem problemas?| (Nº de funções que realizam tarefas específicas) ÷ (Nº de funções com problemas)|
-|M4|Clareza da Mensagem (Message clarity)|O quão clara mensagens operacionais do sistema podem ser entendidas?| (Nº de mensagens claras) ÷ (Total de mensagens) |
-|M5|Consistência Operacional (Operational Consistency)|O quão consistentes são operações similares| (Nº de operações inconsistentes) ÷ (Nº de operações de comportamento similar) |
-|M6|Completude e Facillidade de Uso da Documentação do Usuário (Completeness of user documentation and/or help facility)|Qual a proporção da funcionalidades descritas na documentação?|(Nº de funcionalidades descritas corretamente) ÷ (Nº total de funcionalidades) |
-|M7|Prevenção a Operações Incorretas (Avoidance of incorrect operation - AIO)|Quantas funcionalidades têm prevenção a operações incorretas?| (Nº de funcionalidades que implementaram AIO) ÷ (Nº total de padrões de operações incorretas) |
+### Adequação Funcional
+
+|ID|Nome|Objetivo|Valor Atual|Meta|Status|
+|-|-|-|-|-|-|
+|M1|Cobertura de Implementação Funcional| Completude da implementação conforme especificações|75%|≥85%|🔴 Crítico|
+|M2|Sucesso em Tarefas Centrais| Frequência de operações corretas em compra/adição|70%|≥90%|🔴 Crítico|
+|M3|Autonomia do Usuário| Funcionalidades executadas sem suporte técnico|65%|≥80%|🔴 Crítico|
+
+### Usabilidade
+
+|ID|Nome|Objetivo|Valor Atual|Meta|Status|
+|-|-|-|-|-|-|
+|M4|Navegação Bem-sucedida|Usuários que navegam entre interfaces sem abandonar|75%|≥90%|🔴 Crítico|
+|M5|Consistência entre Dispositivos|Consistência visual/processual entre Android/Linux|82%|≥80%|✅ Atingido|
+|M7|Legibilidade das Mensagens|Mensagens operacionais compreendidas claramente|35%|≥90%|🔴 Crítico|
+|M8|Descoberta de Carrossel|Usuários que identificam funcionalidade do carrossel|25%|≥85%|🔴 Crítico|
+|M9|Compreensão de Nomenclatura|Termos compreendidos por usuários CSA|55%|≥95%|🔴 Crítico|
+|M10|Reconhecimento de Ícones|Ícones interpretados corretamente|45%|≥85%|🔴 Crítico|
+|M11|Prevenção de Erros|Funcionalidades com mecanismos de prevenção|15%|≥80%|🔴 Crítico|
+|M12|Compreensão CSA|Elementos relacionados a CSA compreendidos|85%|≥80%|✅ Atingido|
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 1: Adequação Funcional
 

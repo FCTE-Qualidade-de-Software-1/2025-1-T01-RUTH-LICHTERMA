@@ -13,10 +13,9 @@ nav:
     - Abstraction Sheets: gqm/abstractionsheets.md
     - Avaliação das Métricas: gqm/avaliacao.md
   - Q-Rapid:
-    - Metodologia: qrapid/qrapid.md
+    - Q-rapid: qrapid/qrapid.md
     - Métricas: qrapid/metricas.md
-    - Configuração: qrapid/config_metricas.md
-    - Dashboard: qrapid/dashboard.html
+    - Dashboard: qrapid/dashboard_fixed.html
 
 theme:
   name: material
