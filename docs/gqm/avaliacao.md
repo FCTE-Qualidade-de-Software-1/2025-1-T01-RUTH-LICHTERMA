@@ -58,7 +58,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
 <center>
-![Fonte clara](.)
+<img src="../assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" widht="300"/>
 </center>
 <center>
 **Figura 1**: Tela de Inicial
@@ -70,7 +70,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center>
-![Carrossel sem indicador](/docs/assets/carrossel.jpeg)
+<img src="../assets/carrossel.jpeg" alt="Fonte clara" widht="300"/>
 </center>
 <center>
 **Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
@@ -82,7 +82,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
 <center>
-![CSA](../assets/csa.jpeg)
+<img src="../assets/csa.jpeg" alt="Fonte clara" widht="300"/>
 </center>
 <center>
 **Figura 3**: Tela de csa 
@@ -94,21 +94,19 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem familiaridade com outros idiomas.
 
 <center>
-![Termo em inglês](../assets/home.jpeg)
+<img src="../assets/home.jpeg" alt="Fonte clara" widht="300"/>
 </center>
 
 <center>
-![Busca](../assets/search.jpeg)
+<img src="../assets/search.jpeg" alt="Fonte clara" widht="300"/>
 </center>
 
 - O ícone da tela de histórico é representado por três linhas (menu tipo hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como "Histórico".
 
 <center>
-![Histórico](../assets/historico.jpeg)
+<img src="../assets/historico.jpeg" alt="Fonte clara" widht="300"/>
 </center>
-<center>
-**Figura 4**: Problema de reconhecimento de ícones
-</center>
+
 
 ### M5 - Consistência entre Dispositivos
 **Valor Atual: 82% | Meta: ≥80% | Status: ✅ Atingido**
