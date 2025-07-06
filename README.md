@@ -1,4 +1,4 @@
-# Qualidade de software - 2025.1 - T1x- Nome do grupo
+# Qualidade de software - 2025.1 - T1x- Ruth Lichterma
 
 ## :scroll: Sobre o projeto
    Este projeto é um produto das aulas de Qualidade de Software, ministradas no primeiro semestre letivo de 2025. Nosso objetivo em específico é a análise do projeto [AgroMart](https://github.com/AgroMart) em relação a aspectos de qualidade de software, indicando melhorias ao produto.
