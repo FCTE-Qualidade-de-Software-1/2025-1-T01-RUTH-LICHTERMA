@@ -153,21 +153,11 @@ Das 5 funcionalidades, 3 foram encontradas, resultando em **60% para a M1**.
 Logo, das 11 mensagens avaliadas somente 1 apresentou-se com clareza, totalizando **9,09% na métrica M4**.
 
 #### Propostas de melhoria para M4:
-- **Aplicar alto contraste** seguindo WCAG 2.1 (mínimo 4.5:1)
 - **Aumentar peso da fonte** (bold/semi-bold) para melhor legibilidade
-- **Implementar modo escuro/claro** para usuários
-- **Redesenhar indicadores** com cores contrastantes e tamanho maior
-- **Adicionar setas de navegação** laterais para indicar swipe
-- **Incluir números nos indicadores** (1/3, 2/3, 3/3)
-- **Manter padrão visual** como referência para outras telas
-- **Adicionar filtros de busca** por região ou tipo de produto
+- **Redesenhar indicadores do carrossel** com cores contrastantes e tamanho maior
 - **Traduzir todos os termos** para português (History → Histórico, Search → Buscar)
 - **Substituir ícone hambúrguer** por ícone de relógio para histórico
-- **Padronizar nomenclatura** com glossário específico do domínio agrícola
-- **Substituir ícones ambíguos** por símbolos universalmente reconhecidos
-- **Adicionar labels descritivos** acompanhando ícones críticos
-- **Padronizar biblioteca de ícones** (Material Design ou iOS Guidelines)
-- **Adicionar breadcrumbs** para orientação de navegação
+- **Adicionar campo "nome do produto"** no histórico de compras
 
 
 ### M5 - Consistência Operacional

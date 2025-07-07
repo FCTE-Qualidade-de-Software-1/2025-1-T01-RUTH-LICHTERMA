@@ -8,9 +8,9 @@ O **Q-Rapid (Quality Rapid Application Development)** é uma metodologia que com
 
 Conforme já mencionado na contextualização do projeto, escolhemos Q-Rapid por sua **pertinência aos objetivos do AgroMart**, priorizando características como:
 
-- ✅ **Robustez:** Garantir que o sistema seja confiável
-- ✅ **Adaptabilidade:** Capacidade de se ajustar às necessidades dos usuários CSA
-- ✅ **Segurança:** Proteção dos dados dos agricultores e consumidores
+- **Robustez:** Garantir que o sistema seja confiável
+- **Adaptabilidade:** Capacidade de se ajustar às necessidades dos usuários CSA
+- **Segurança:** Proteção dos dados dos agricultores e consumidores
 
 ## Histórico de Versões
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">

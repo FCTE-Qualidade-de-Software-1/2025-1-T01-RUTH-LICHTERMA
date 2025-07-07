@@ -8,6 +8,11 @@ Definidas através da análise das perguntas e hipóteses e da consulta às ISOs
 |M1|Cobertura de Implementação Funcional (Functional implementation coverage)| Como completar a implementação de acordo com as especificações de requisito?|(Nº de funcionalidades nos requisitos) ÷ (Nº funcionalidades incorretas ou faltando)|
 |M2|Precisão Computacional (Computational Accuracy)| O quão frequentes são resultados errados das funções implementadas?| (Nº de operações erradas) ÷ (tempo gasto nelas)|
 |M3|Apropriação Funcional (Functional appropriateness)| Quantas funcionalidades realizam seus objetivos sem problemas?| (Nº de funções que realizam tarefas específicas) ÷ (Nº de funções com problemas)|
+
+## Usabilidade
+
+|ID|Nome|Objetivo|Cálculo (segundo a SQUARE)|
+|-|-|-|-|
 |M4|Clareza da Mensagem (Message clarity)|O quão clara mensagens operacionais do sistema podem ser entendidas?| (Nº de mensagens claras) ÷ (Total de mensagens) |
 |M5|Consistência Operacional (Operational Consistency)|O quão consistentes são operações similares| (Nº de operações inconsistentes) ÷ (Nº de operações de comportamento similar) |
 |M6|Completude e Facillidade de Uso da Documentação do Usuário (Completeness of user documentation and/or help facility)|Qual a proporção da funcionalidades descritas na documentação?|(Nº de funcionalidades descritas corretamente) ÷ (Nº total de funcionalidades) |

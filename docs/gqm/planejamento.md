@@ -17,7 +17,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - M5: Consistência Operacional
 - M7: Prevenção de Erros
 
-### 4. Metas das Métricas
+### 4. Metas das Métricas [fase 2]
 Baseadas nas hipóteses levantadas anteriormente.
 
 - M1 (Completude Funcional): ≥85%
@@ -54,8 +54,8 @@ Baseadas nas hipóteses levantadas anteriormente.
   M7 ≥ 85%
 
 ### 5. Metodologia
-- **Revisão de documentação:** Analisar requisitos, fluxos e telas fornecidas.
-- **Análise de capturas de tela:** Avaliar funcionalidades e usabilidade a partir das imagens fornecidas.
+- **Revisão de documentação:** Análise detalhada dos requisitos funcionais e não funcionais, especificações de fluxo de usuário e wireframes/mockups fornecidos.
+- **Avaliação Heurística da Interface:** Inspeção da interface do usuário com base nas 10 Heurísticas de Usabilidade de Nielsen para identificar potenciais falhas de design e usabilidade.
 - **Checklist de métricas:** Preencher tabela de métricas com valor atual, meta, status e justificativa.
 
 ### 6. Critérios de Aceite

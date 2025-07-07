@@ -51,6 +51,8 @@ A tabela abaixo detalha os critérios de qualidade considerados e o nível de ê
   </table>
 </div>
 
+**Nota:** Quando nos referimos ao critério **"Completude"** nesta avaliação, estaremos focando especificamente na **Adequação Funcional** do sistema, ou seja, na capacidade do AgroMart de fornecer funcionalidades que atendam às necessidades especificadas e aos objetivos dos usuários de forma completa e correta.
+
 ### 2.2. Componentes a Serem Avaliados
 
 Para esta avaliação, os principais componentes do produto AgroMart que serão submetidos à análise incluem:

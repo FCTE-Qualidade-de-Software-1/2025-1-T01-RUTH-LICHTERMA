@@ -22,9 +22,9 @@
   <tr>
     <td colspan="2">
         <ul>
-            <li>Completude funcional das 8 interfaces principais</li>
-            <li>Correção funcional das tarefas centrais (Comprar e Adicionar produtos)</li>
-            <li>Adequação funcional para usuários com conhecimento tecnológico intermediário</li>
+            <li>Cobertura de Implementação Funcional</li>
+            <li>Precisão Computacional</li>
+            <li>Apropriação Funcional</li>
         </ul>
     </td>
     <td colspan="2">
@@ -50,10 +50,7 @@
     </td>
     <td colspan="2">
         <ul>
-            <li>Usuários com conhecimento tecnológico intermediário reduzem problemas de adequação funcional</li>
-            <li>Consumidores CSA e Agricultores CSA podem requerer fluxos funcionais específicos</li>
-            <li>Diferentes ambientes (Android/Linux) podem impactar a correção funcional</li>
-            <li>Ausência de dados-exemplo pode aumentar tempo de execução das tarefas</li>
+            <li>Explicar como os fatores de variação podem impactar nas metricas (e quais), não precisa ser 1:1...</li>
         </ul>
     </td>
   </tr>
@@ -81,9 +78,10 @@
   <tr>
     <td colspan="2">
         <ul>
-            <li>Usabilidade das 8 interfaces principais obrigatórias</li>
-            <li>Acessibilidade de textos e imagens (componentes principais)</li>
-            <li>Facilidade de aprendizado para conhecimento médio em CSA</li>
+            <li>Clareza da Mensagem</li>
+            <li>Consistência Operacional</li>
+            <li>Completude e Facilidade de Uso da Documentação do Usuário</li>
+            <li>Prevenção a Operações Incorretas</li>
         </ul>
     </td>
     <td colspan="2">
@@ -109,10 +107,7 @@
     </td>
     <td colspan="2">
         <ul>
-            <li>Usuários com conhecimento médio em CSA reduzem tempo de aprendizado</li>
-            <li>Maior participação dos usuários no desenvolvimento melhora a usabilidade</li>
-            <li>Diferentes dispositivos podem requerer adaptações de interface</li>
-            <li>Componentes visuais (textos/imagens) impactam diretamente a compreensibilidade</li>
+            <li>Explicar como os fatores de variação podem impactar nas metricas (e quais), não precisa ser 1:1...</li>
         </ul>
     </td>
   </tr>

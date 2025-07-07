@@ -16,7 +16,7 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 | Para o propósito de | Entender |
 | Com Respeito a | Adequação Funcional |
 | Ponto de Vista | Dono do Produto e Agricultor CSA |
-| Contexto | Sistema com 8 interfaces principais e usuários com conhecimento tecnológico intermediário |
+| Contexto | Disciplina |
 
 ## Objetivo 2: Usabilidade e Aprendizado
 |||
@@ -25,7 +25,7 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
 | Para o propósito de | Entender |
 | Com Respeito a | Usabilidade |
 | Ponto de Vista | Consumidores CSA e Agricultores CSA |
-| No contexto de | Sistema com componentes textuais/visuais e usuários com conhecimento médio em CSA |
+| No contexto de | Disciplina |
 
 
 ## Histórico de Versões
