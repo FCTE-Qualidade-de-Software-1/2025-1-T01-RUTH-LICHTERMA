@@ -60,6 +60,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
+<center><p>Fonte clara</p></center>
 <center>
 <img src="../../assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" width="300"/>
 </center>
@@ -77,6 +78,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
+<center><p>Carrosel</p></center>
 <center>
 <img src="../../assets/carrossel.jpeg" alt="Carrossel" width="300"/>
 </center>
@@ -94,6 +96,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
+<center><p>Tela de CSA</p></center>
 <center>
 <img src="../../assets/csa.jpeg" alt="Tela de CSA" width="300"/>
 </center>
