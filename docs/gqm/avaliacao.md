@@ -31,8 +31,6 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Métricas com status "Atingido" (✅) devem ser documentadas como boas práticas.
 - O relatório deve conter evidências (prints, tabelas, justificativas).
 
-### 6. Ações Futuras
-- Propor melhorias para os pontos críticos identificados (ex: melhorar contraste de fontes, traduzir termos, adicionar feedback de erro).
 
 
 ## Avaliação de Adequação Funcional - Observações
@@ -47,7 +45,12 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
   - Não existe um APK pronto para download direto.  
   - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).  
 - **(F4) Uso**: não pôde ser avaliado de forma completa devido à ausência de ambiente interativo funcional.  
-- **(F5) Compra**: não foi possível verificar as operações de compra em funcionamento, considerando que apenas as telas estáticas foram fornecidas.  
+- **(F5) Compra**: não foi possível verificar as operações de compra em funcionamento, considerando que apenas as telas estáticas foram fornecidas.
+
+#### Proposta de melhoria para M1:
+- **Criar ambiente de teste funcional** para validar todas as funcionalidades
+- **Publicar aplicativo nas lojas oficiais** (Google Play e App Store)
+- **Gerar APK de demonstração** para testes diretos  
 
 
 ## Avaliação de Usabilidade - Observações
@@ -58,11 +61,16 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
 <center>
-<img src="../assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" widht="300"/>
+<img src="../../assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" width="300"/>
 </center>
 <center>
 **Figura 1**: Tela de Inicial
 </center>
+
+#### Proposta de melhoria para M7:
+- **Aplicar alto contraste** seguindo WCAG 2.1 (mínimo 4.5:1)
+- **Aumentar peso da fonte** (bold/semi-bold) para melhor legibilidade
+- **Implementar modo escuro/claro** para usuários
 
 ### M8 - Descoberta de Carrossel
 **Valor Atual: 25% | Meta: ≥85% | Status: 🔴 Crítico**
@@ -70,11 +78,16 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center>
-<img src="../assets/carrossel.jpeg" alt="Carrossel" widht="300"/>
+<img src="../../assets/carrossel.jpeg" alt="Carrossel" width="300"/>
 </center>
 <center>
 **Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
 </center>
+
+#### Proposta de melhoria para M8:
+- **Redesenhar indicadores** com cores contrastantes e tamanho maior
+- **Adicionar setas de navegação** laterais para indicar swipe
+- **Incluir números nos indicadores** (1/3, 2/3, 3/3)
 
 ### M12 - Compreensão CSA
 **Valor Atual: 85% | Meta: ≥80% | Status: ✅ Atingido**
@@ -82,11 +95,15 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
 <center>
-<img src="../assets/csa.jpeg" alt="Tela de CSA" widht="300"/>
+<img src="../../assets/csa.jpeg" alt="Tela de CSA" width="300"/>
 </center>
 <center>
 **Figura 3**: Tela de csa 
 </center>
+
+#### Proposta de melhoria para M12:
+- **Manter padrão visual** como referência para outras telas
+- **Adicionar filtros de busca** por região ou tipo de produto
 
 ### M9 - Compreensão de Nomenclatura
 **Valor Atual: 55% | Meta: ≥95% | Status: 🔴 Crítico**
@@ -94,24 +111,43 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem familiaridade com outros idiomas.
 
 <center>
-<img src="../assets/home.jpeg" alt="Home" widht="300"/>
+<img src="../../assets/home.jpeg" alt="Home" width="300"/>
 </center>
 
 <center>
-<img src="../assets/search.jpeg" alt="Search" widht="300"/>
+<img src="../../assets/search.jpeg" alt="Search" width="300"/>
 </center>
 
 - O ícone da tela de histórico é representado por três linhas (menu tipo hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como "Histórico".
 
 <center>
-<img src="../assets/historico.jpeg" alt="Historico" widht="300"/>
+<img src="../../assets/historico.jpeg" alt="Historico" width="300"/>
 </center>
 
+#### Proposta de melhoria para M9:
+- **Traduzir todos os termos** para português (History → Histórico, Search → Buscar)
+- **Substituir ícone hambúrguer** por ícone de relógio para histórico
+- **Padronizar nomenclatura** com glossário específico do domínio agrícola
+
+
+### M10 - Clareza dos Ícones
+**Valor Atual: 45% | Meta: ≥85% | Status: 🔴 Crítico**
+
+- Alguns ícones do aplicativo não são intuitivos ou podem gerar interpretações ambíguas, como o ícone de menu hambúrguer sendo usado para representar "Histórico".
+
+#### Proposta de melhoria para M10:
+- **Substituir ícones ambíguos** por símbolos universalmente reconhecidos
+- **Adicionar labels descritivos** acompanhando ícones críticos
+- **Padronizar biblioteca de ícones** (Material Design ou iOS Guidelines)
 
 ### M5 - Consistência entre Dispositivos
 **Valor Atual: 82% | Meta: ≥80% | Status: ✅ Atingido**
 
 - O aplicativo apresenta boa responsividade e funcionamento consistente no ambiente mobile, o que é positivo.
+
+#### Proposta de melhoria para M5:
+- **Documentar guidelines** de design responsivo para a equipe
+- **Expandir testes** para diferentes tamanhos de tela
 
 ### M4 - Navegação Bem-sucedida  
 **Valor Atual: 75% | Meta: ≥90% | Status: 🔴 Crítico**
@@ -120,10 +156,20 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 - Contudo, a utilização de termos estrangeiros pode ser um obstáculo para alguns usuários, prejudicando a completude e a facilidade de uso.
 - O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão.
 
+#### Proposta de melhoria para M4:
+- **Traduzir termos estrangeiros** para português
+- **Aumentar contraste** entre elementos interativos
+- **Adicionar breadcrumbs** para orientação de navegação
+
 ### M11 - Prevenção de Erros
 **Valor Atual: 15% | Meta: ≥80% | Status: 🔴 Crítico**
 
 - Ainda não foram identificados mecanismos claros de prevenção a operações incorretas, tampouco feedbacks de erro visíveis no sistema. Recomenda-se mapear esses pontos futuramente para aumentar a segurança operacional e evitar falhas de uso.
+
+#### Proposta de melhoria para M11:
+- **Implementar validação em tempo real** em formulários críticos
+- **Criar confirmações** para ações irreversíveis (compras, exclusões)
+- **Desenvolver mensagens de erro claras** em português
 
 ## 📊 Resumo das Métricas Avaliadas
 
@@ -169,26 +215,17 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
       <td>06/07/2025</td>
       <td>Alinhamento com métricas Q-Rapid e organização por métricas</td>
       <td>Breno Lucena</td>
-    </tr><tr>
+    </tr>    <tr>
       <td>1.3</td>
       <td>06/07/2025</td>
       <td>Adição do planejamento de avaliação</td>
-      <td>Dannyeclisson</td>
+      <td>Dannyeclisson, Luis Zarbielli</td>
+    </tr>
+    <tr>
+      <td>1.4</td>
+      <td>06/07/2025</td>
+      <td>Adição de propostas de melhoria para todas as métricas e correção de caminhos das imagens</td>
+      <td>Luis Zarbielli, Dannyeclisson</td>
     </tr>
   </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
