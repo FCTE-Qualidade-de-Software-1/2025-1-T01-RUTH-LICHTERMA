@@ -110,6 +110,10 @@
     <td colspan="2">
         <ul>
             <li>Nível de conhecimento sobre CSA e agricultura</li>
+            <li>Diferenças na visualização em diferentes dispotivos, causadas por má implementação da responsividade, pode afetar a consistência operacional.</li>
+            <li>A clareza das mensagens é mais efetiva quando há a participação dos usuários no desenvolvimento e quando algum dos envolvidos no projeto, seja os desenvolvedores ou o usuário participante, possuem conhecimento sobre CSA.</li>
+            <li>Com um usuário envolvido no desenvolvimento, a completude da documentação de usuário pode ser testada e validada.</li>
+            <li>Usuários testando a aplicação em diferentes plataforma ainda durante o desenvolvimento ajuda detectar potenciais funcionalidade que necessitam de mecanismos de prevenção a erros.</li>
         </ul>
     </td>
   </tr>
@@ -143,6 +147,12 @@
       <td>03/06/2025</td>
       <td>Revisão</td>
       <td>Leonardo Barcellos</td>
+    </tr>
+        <tr>
+      <td>1.3</td>
+      <td>07/06/2025</td>
+      <td>Implementação dos feedbacks da professora</td>
+      <td>Raphael Mendes, Leonardo Barcellos, Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo</td>
     </tr>
   </tbody>
 </table>

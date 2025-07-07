@@ -15,8 +15,9 @@ Conforme já mencionado na contextualização do projeto, escolhemos o PSM/CID p
 - **Medição Contínua:** Permite acompanhar, em tempo real, indicadores críticos de desempenho e qualidade do software.
 - **Integração de Dados:** Garante consistência e atualização contínua das informações, promovendo decisões estratégicas mais embasadas.
 - **Aprimoramento Iterativo:** Facilita a adaptação e melhoria contínua do sistema com base em dados coletados durante todo o ciclo de desenvolvimento.
+<!--
 - **Aderência** às necessidades do negócio: Conecta metas técnicas a metas organizacionais, especialmente em um contexto sensível como o agronegócio.
-
+-->
 ## Histórico de Versões
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
   <thead>
