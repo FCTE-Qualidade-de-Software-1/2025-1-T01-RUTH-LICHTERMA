@@ -1,4 +1,3 @@
-## Planejamento da Avaliação
 
 ## Introdução
 O artefato a seguir tem como objetivo planejar a avaliação das 8 telas do AgroMart. Será utilizado prints das telas do AgroMart.
@@ -22,8 +21,15 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 
 ### 5. Metodologia
-- **Revisão de documentação:** Análise detalhada dos requisitos funcionais e não funcionais, especificações de fluxo de usuário e wireframes/mockups fornecidos.
+- **Revisão de documentação:** Análise detalhada dos requisitos funcionais e não funcionais, especificações de fluxo de usuário e wireframes/mockups fornecidos.  
+  Para a revisão de documentação, utilizamos como base os materiais presentes no repositório do AgroMart, especificamente na seção "docs". A equipe do AgroMart também disponibilizou um link público ([https://agromart.github.io/docs/](https://agromart.github.io/docs/)), onde está centralizada toda a documentação do projeto. Nessa documentação, encontramos:
+  - Tutorial de instalação do sistema;
+  - Elicitação de requisitos, contendo todos os requisitos funcionais e não funcionais do aplicativo;
+  - Framework de priorização utilizado ("MoSCoW") para definir a prioridade de cada requisito (não foram detalhadas perguntas técnicas além do uso do MoSCoW);
+  - Na seção de "modelagem", estão descritos: Casos de Uso, Cenários e Histórias de Usuário, contemplando dois tipos de usuários principais: "Administrador" e "Co-agricultor";
+  - No "Backlog", há uma tabela detalhada com a granularidade do backlog, incluindo: Épicos, Features e User Stories
 - **Avaliação Heurística da Interface:** Inspeção da interface do usuário com base nas Heurísticas(2,4,5,6) de Usabilidade de Nielsen para identificar potenciais falhas de design e usabilidade.
+
 - **Checklist de métricas:** Preencher tabela de métricas com valor atual, meta, status e justificativa.
 
 ### 6. Critérios de Aceite
@@ -35,7 +41,7 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 ### 7. Ferramentas e Recursos
 - Plataforma analisada AgroMart Web
-- Dispositivos de teste (computador pessoal)
+- Dispositivos de teste (computador pessoal e celular)
 
 
 ## Histórico de Versão

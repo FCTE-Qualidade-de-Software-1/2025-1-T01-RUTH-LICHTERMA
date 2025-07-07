@@ -130,7 +130,7 @@
       <td>Equipe Ruth Lichterman</td>
     </tr>
         <tr>
-      <td>1.3</td>
+      <td>1.4</td>
       <td>06/07/2025</td>
       <td>Atualização de erros nas descrições das reuniões e adição da reunião 8.</td>
       <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>

@@ -46,9 +46,9 @@ Definidas através da análise das perguntas e hipóteses e da consulta às ISOs
 
 ## Relação entre Objetivos de Medição - Questões e Métricas - Objetivo de Medição 2: Usabilidade
 
-<center><p>Figura 3 - Questões e Métricas - Confiabilidade</p></center>
+<center><p>Figura 3 - Questões e Métricas - Usabilidade</p></center>
 
-![Questões e Métricas - Confiabilidade](../assets/usability.jpeg)
+![Questões e Métricas - Usabilidade](../assets/usability.jpeg)
 
 
 
@@ -77,13 +77,13 @@ Definidas através da análise das perguntas e hipóteses e da consulta às ISOs
       <td>Raphael Mendes</td>
     </tr>
     <tr>
-      <td>1.1</td>
+      <td>1.2</td>
       <td>02/07/2025</td>
       <td>Exposição de métricas</td>
       <td>Raphael Mendes da Silva</td>
     </tr>
     <tr>
-      <td>1.2</td>
+      <td>1.3</td>
       <td>06/07/2025</td>
       <td>Separação em arquivo e paǵina dedicados</td>
       <td>Raphael Mendes da Silva e Breno Lucena</td>

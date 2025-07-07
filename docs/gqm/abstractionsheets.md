@@ -42,15 +42,17 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>75% das funcionalidades nas 8 interfaces principais foram implementadas (abaixo da meta de 85%)</li>
-          <li>70% das tarefas centrais (Comprar e Adicionar produtos) operam corretamente (abaixo da meta de 90%)</li>
+          <li>75% das funcionalidades nas 8 interfaces principais foram implementadas</li>
+          <li>70% das tarefas centrais (Comprar e Adicionar produtos) operam corretamente</li>
           <li>Tempo médio para completar tarefas críticas > 5 minutos devido a problemas de usabilidade</li>
-          <li>65% dos usuários conseguem executar funcionalidades sem suporte técnico (abaixo da meta de 80%)</li>
+          <li>65% dos usuários conseguem executar funcionalidades sem suporte técnico </li>
         </ul>
     </td>
     <td colspan="2">
         <ul>
-            <li>Explicar como os fatores de variação podem impactar nas metricas (e quais), não precisa ser 1:1...</li>
+            <li>O nível técnico intermediário dos usuários pode impactar a apropriação funcional, por conta da dificuldade do usuário em usar o sistema sem ajuda.</li>
+            <li>Os perfis distintos podem impactar na precisão computacional, por conta de usos diferentes de funções gerarem erros.</li>
+            <li>A execução em Android/Linux pode impactar a precisão computacional, por conta de comportamentos inconsistentes entre plataformas.</li>
         </ul>
     </td>
   </tr>
@@ -99,15 +101,15 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>85% dos usuários navegam pelas 8 interfaces (meta), atual: 75%</li>
-          <li>75% dos textos e imagens são compreensíveis (abaixo da meta de 85%)</li>
+          <li>85% dos usuários navegam pelas 8 interfaces</li>
+          <li>75% dos textos e imagens são compreensíveis</li>
           <li>Tempo médio de aprendizado > 15 minutos devido a problemas de nomenclatura e legibilidade</li>
-          <li>65% dos usuários completam tarefas principais sem abandonar o sistema (abaixo da meta de 80%)</li>
+          <li>65% dos usuários completam tarefas principais sem abandonar o sistema</li>
         </ul>
     </td>
     <td colspan="2">
         <ul>
-            <li>Explicar como os fatores de variação podem impactar nas metricas (e quais), não precisa ser 1:1...</li>
+            <li>Nível de conhecimento sobre CSA e agricultura</li>
         </ul>
     </td>
   </tr>

@@ -120,25 +120,25 @@ Conheça os membros da equipe <strong>Ruth Lichterman</strong>, estudantes dedic
     <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Autor(a)</th>
   </tr>
   <tr>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.0.0</td>
+    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.0</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">31/05/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Mudanças iniciais em Sobre, Link da Página e Integrantes</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Raphael Mendes, Leonardo Barcellos</td>
   </tr>
   <tr style="background-color: #f8f9fa;">
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1.0</td>
+    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">02/07/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Redesign completo da página Home com melhorias visuais e de conteúdo</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Equipe Ruth Lichterman</td>
   </tr>
   <tr style="background-color: #f8f9fa;">
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1</td>
+    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.2</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">05/07/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Revisão</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Leonardo Barcellos</td>
   </tr>
   <tr style="background-color: #f8f9fa;">
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1</td>
+    <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.3</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">06/07/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Revisão</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Luis Zarbielli, Dannyeclisson Rodrigo</td>
