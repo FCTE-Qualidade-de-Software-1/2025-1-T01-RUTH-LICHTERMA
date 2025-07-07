@@ -15,6 +15,7 @@ nav:
     - Registro de Reuniões: organizacao/reunioes.md
     - Tabela de Contribuição: organizacao/contribuicao.md
     - Métricas PSM-CID: organizacao/psm-cid.md
+    - Entregas Paralelas: organizacao/paralelo.md
   - Fase 1:
     - Contextualização: contextualizacao.md
     - Q-rapid: qrapid/qrapid.md
@@ -22,7 +23,8 @@ nav:
     - Objetivos: gqm/objetivos.md
     - Questões e Hipóteses: gqm/questoes.md
     - Abstraction Sheets: gqm/abstractionsheets.md
-    - Definição das Métricas (GQM): gqm/metricas.md
+    - Definição das Métricas: gqm/metricas.md
+    - Planejamento da Avaliação: gqm/planejamento.md
   - Fase 4:
     - Avaliação das Métricas: gqm/avaliacao.md
     - Definição das Métricas (Q-Rapids): qrapid/metricas.md

@@ -5,8 +5,9 @@ Script para coletar e atualizar métricas de qualidade do AgroMart
 
 import json
 import datetime
-import random
 from pathlib import Path
+import webbrowser
+import os
 
 class QRapidDataCollector:
     def __init__(self, data_file_path="docs/qrapid/data/metrics_data.json"):
@@ -17,9 +18,8 @@ class QRapidDataCollector:
         """Garante que o arquivo de dados existe"""
         if not self.data_file.exists():
             self.data_file.parent.mkdir(parents=True, exist_ok=True)
-            initial_data = []
             with open(self.data_file, 'w', encoding='utf-8') as f:
-                json.dump(initial_data, f, ensure_ascii=False, indent=2)
+                json.dump([], f, ensure_ascii=False, indent=2)
     
     def load_existing_data(self):
         """Carrega dados existentes"""
@@ -31,124 +31,73 @@ class QRapidDataCollector:
     
     def simulate_metrics_collection(self):
         """
-        Simula a coleta de métricas baseada na avaliação real realizada
+        Simula a coleta de métricas
         """
+        import random
         base_metrics = {
-            "M1_completude_funcional": random.uniform(73, 77),
-            "M2_sucesso_tarefas": random.uniform(68, 72),
-            "M3_autonomia_usuario": random.uniform(63, 67),
-            "M4_navegacao_sucesso": random.uniform(73, 77),
-            "M5_compreensao_csa": random.uniform(80, 85),
-            "M6_consistencia_dispositivos": random.uniform(80, 85),
-            "M7_legibilidade_mensagens": random.uniform(33, 37),
-            "M8_descoberta_carrossel": random.uniform(23, 27),
-            "M9_compreensao_nomenclatura": random.uniform(53, 57),
-            "M10_reconhecimento_icones": random.uniform(43, 47),
-            "M11_prevencao_erros": random.uniform(13, 17),
-            "M12_compreensao_csa": random.uniform(83, 87),
-            "M13_tempo_aprendizado": random.uniform(12, 18)
+            "M1_completude_funcional": random.uniform(70, 80),
+            "M4_clareza_mensagens": random.uniform(30, 40),
+            "M5_consistencia_operacional": random.uniform(50, 70),
+            "M7_prevencao_erros": random.uniform(80, 100),
         }
         return base_metrics
             
-        
+    def define_metrics_based_on_evaluation(self):
+        """
+        Define valores reais da avaliação do laudo fornecido
+        """
+        evaluation_metrics = {
+            "M1_completude_funcional": 60.0,     # laudo
+            "M4_clareza_mensagens": 9.09,        # laudo
+            "M5_consistencia_operacional": 60.0, # laudo
+            "M7_prevencao_erros": 100.0          # laudo
+        }
+        return evaluation_metrics
+    
     def collect_real_metrics(self, use_evaluation_data=False):
         """
-        Método para coletar métricas reais - implementar conforme necessário
-        
-        Args:
-            use_evaluation_data (bool): Se True, usa valores baseados na avaliação específica
+        Coleta métricas reais ou simuladas
         """
-        # TODO: Implementar coleta real de métricas
-        # Exemplos de fontes:
-        # - Google Analytics
-        # - Logs do servidor
-        # - Testes automatizados
-        # - Feedback de usuários
-        
-        # Por enquanto, usa simulação ou dados da avaliação
         if use_evaluation_data:
-            print("📊 Usando valores baseados na avaliação de usabilidade...")
+            print("📊 Coletando métricas com base na AVALIAÇÃO REAL...")
             return self.define_metrics_based_on_evaluation()
         else:
-            print("📊 Usando valores simulados...")
+            print("📊 Coletando métricas simuladas...")
             return self.simulate_metrics_collection()
     
     def add_new_data_point(self, custom_date=None, use_evaluation_data=False):
         """
         Adiciona um novo ponto de dados
-        
-        Args:
-            custom_date: Data customizada (opcional)
-            use_evaluation_data (bool): Se True, usa valores baseados na avaliação específica
         """
         existing_data = self.load_existing_data()
-        
-        # Data atual ou customizada
         date = custom_date or datetime.date.today().isoformat()
-        
-        # Coleta métricas
         metrics = self.collect_real_metrics(use_evaluation_data)
-        
-        # Cria novo ponto de dados
         new_data_point = {
             "date": date,
             **metrics
         }
-        
-        # Adiciona aos dados existentes
         existing_data.append(new_data_point)
-        
-        # Mantém apenas os últimos 30 pontos de dados
+
+        # manter somente últimos 30
         if len(existing_data) > 30:
             existing_data = existing_data[-30:]
-        
-        # Salva dados atualizados
+
         with open(self.data_file, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=2)
         
         print(f"✅ Dados atualizados para {date}")
         return new_data_point
     
-    def generate_sample_data(self, days=30):
-        """Gera dados de exemplo para demonstração"""
-        data = []
-        start_date = datetime.date.today() - datetime.timedelta(days=days)
-
-        for i in range(days):
-            current_date = start_date + datetime.timedelta(days=i)
-            metrics = {
-                "date": current_date.isoformat(),
-                "M1_completude_funcional": min(95, 75 + i * 0.5),
-                "M2_sucesso_tarefas": min(95, 85 + i * 0.3),
-                "M3_autonomia_usuario": min(90, 75 + i * 0.4),
-                "M4_navegacao_sucesso": min(95, 80 + i * 0.4),
-                "M5_compreensao_csa": min(90, 78 + i * 0.3),
-                "M6_consistencia_dispositivos": min(95, 82 + i * 0.4),
-                "M7_legibilidade_mensagens": max(30, 35 + i * 0.5),
-                "M8_descoberta_carrossel": max(20, 25 + i * 0.6),
-                "M9_compreensao_nomenclatura": max(50, 55 + i * 0.4),
-                "M10_reconhecimento_icones": max(40, 45 + i * 0.4),
-                "M11_prevencao_erros": max(10, 15 + i * 0.5),
-                "M12_compreensao_csa": min(95, 85 + i * 0.2),
-                "M13_tempo_aprendizado": max(10, 20 - i * 0.2)
-            }
-            data.append(metrics)
-
-        with open(self.data_file, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
-        print(f"✅ Gerados {days} dias de dados de exemplo")
-        return data
-    
     def get_latest_metrics(self):
-        """Retorna as métricas mais recentes"""
         data = self.load_existing_data()
         if data:
             return data[-1]
         return None
     
     def generate_report(self):
-        """Gera relatório das métricas atuais"""
+        """
+        Gera relatório formatado
+        """
         latest = self.get_latest_metrics()
         if not latest:
             print("❌ Nenhum dado disponível")
@@ -159,63 +108,41 @@ class QRapidDataCollector:
         print("="*50)
         print(f"📅 Data: {latest['date']}")
         print("\n🔧 ADEQUAÇÃO FUNCIONAL:")
-        print(f"   • Completude Funcional: {latest['M1_completude_funcional']:.1f}% (Meta: ≥85%)")
-        print(f"   • Sucesso em Tarefas: {latest['M2_sucesso_tarefas']:.1f}% (Meta: ≥90%)")
-        print(f"   • Autonomia do Usuário: {latest['M3_autonomia_usuario']:.1f}% (Meta: ≥80%)")
-        
+        print(f"   • Completude Funcional (M1): {latest['M1_completude_funcional']:.1f}% (Meta: ≥85%)")
+
         print("\n👤 USABILIDADE:")
-        print(f"   • Navegação Bem-sucedida: {latest['M4_navegacao_sucesso']:.1f}% (Meta: ≥90%)")
-        print(f"   • Compreensão CSA: {latest['M5_compreensao_csa']:.1f}% (Meta: ≥85%)")
-        print(f"   • Consistência Dispositivos: {latest['M6_consistencia_dispositivos']:.1f}% (Meta: ≥90%)")
+        print(f"   • Clareza das Mensagens (M4): {latest['M4_clareza_mensagens']:.1f}% (Meta: ≥85%)")
+        print(f"   • Consistência Operacional (M5): {latest['M5_consistencia_operacional']:.1f}% (Meta: ≤10%)")
+        print(f"   • Prevenção de Erros (M7): {latest['M7_prevencao_erros']:.1f}% (Meta: ≥85%)")
         
-        print("\n🔴 PROBLEMAS CRÍTICOS DA AVALIAÇÃO:")
-        if 'M7_legibilidade_mensagens' in latest:
-            print(f"   • Legibilidade Mensagens: {latest['M7_legibilidade_mensagens']:.1f}% (Meta: ≥90%)")
-        if 'M8_descoberta_carrossel' in latest:
-            print(f"   • Descoberta Carrossel: {latest['M8_descoberta_carrossel']:.1f}% (Meta: ≥85%)")
-        if 'M9_compreensao_nomenclatura' in latest:
-            print(f"   • Compreensão Nomenclatura: {latest['M9_compreensao_nomenclatura']:.1f}% (Meta: ≥95%)")
-        if 'M10_reconhecimento_icones' in latest:
-            print(f"   • Reconhecimento Ícones: {latest['M10_reconhecimento_icones']:.1f}% (Meta: ≥85%)")
-        if 'M11_prevencao_erros' in latest:
-            print(f"   • Prevenção de Erros: {latest['M11_prevencao_erros']:.1f}% (Meta: ≥80%)")
-        
-        print("\n📈 MÉTRICAS HISTÓRICAS:")
-        if 'M7_clareza_visual' in latest:
-            print(f"   • Clareza Visual: {latest['M7_clareza_visual']:.1f}% (Meta: ≥85%)")
-        if 'M8_recuperacao_erros' in latest:
-            print(f"   • Recuperação de Erros: {latest['M8_recuperacao_erros']:.1f}% (Meta: ≥80%)")
-        if 'M9_tempo_aprendizado' in latest:
-            print(f"   • Tempo de Aprendizado: {latest['M9_tempo_aprendizado']:.1f} min (Meta: ≤15 min)")
         print("="*50)
-    
-    def define_metrics_based_on_evaluation(self):
+
+    def generate_sample_data(self, days=30):
         """
-        Define valores específicos baseados na avaliação de usabilidade realizada
+        Gera dados fictícios
         """
-        # Valores baseados na sua avaliação específica
-        evaluation_metrics = {
-            "M1_completude_funcional": 78.0,  # Funcionalidades básicas implementadas
-            "M2_sucesso_tarefas": 82.0,       # Algumas tarefas com problemas
-            "M3_autonomia_usuario": 70.0,     # Problemas de usabilidade afetam autonomia
-            "M4_navegacao_sucesso": 75.0,     # Navegação OK, mas com problemas
-            "M5_compreensao_csa": 85.0,       # Busca de CSA bem estruturada
-            "M6_consistencia_dispositivos": 88.0,  # Boa responsividade mobile
-            
-            # Métricas específicas baseadas nos problemas identificados:
-            "M7_legibilidade_mensagens": 40.0,     # Fonte muito clara - CRÍTICO
-            "M8_descoberta_carrossel": 30.0,       # Sem indicadores visuais - CRÍTICO  
-            "M9_compreensao_nomenclatura": 60.0,   # Termos em inglês - PROBLEMA
-            "M10_reconhecimento_icones": 50.0,     # Ícones ambíguos - PROBLEMA
-            "M11_prevencao_erros": 20.0,           # Não identificados - CRÍTICO
-            "M12_contraste_visual": 45.0,          # Cores semelhantes - CRÍTICO
-            "M13_tempo_aprendizado": 25.0           # Afetado pelos problemas
-        }
+        data = []
+        start_date = datetime.date.today() - datetime.timedelta(days=days)
+
+        for i in range(days):
+            current_date = start_date + datetime.timedelta(days=i)
+            metrics = {
+                "date": current_date.isoformat(),
+                "M1_completude_funcional": min(85, 60 + i * 0.5),
+                "M4_clareza_mensagens": max(9, 9 + i * 0.2),
+                "M5_consistencia_operacional": min(85, 60 + i * 0.3),
+                "M7_prevencao_erros": max(80, 100 - i * 0.3)
+            }
+            data.append(metrics)
         
-        return evaluation_metrics
+        with open(self.data_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        
+        print(f"✅ Gerados {days} dias de dados de exemplo")
+        return data
+    
 
 def main():
-    """Função principal para execução do script"""
     collector = QRapidDataCollector()
     
     print("🚀 Q-Rapid Data Collector - AgroMart")
@@ -231,48 +158,26 @@ def main():
     
     if choice == "1":
         collector.generate_sample_data()
-        print("✅ Dados de exemplo gerados!")
-        
     elif choice == "2":
-        new_data = collector.add_new_data_point(use_evaluation_data=False)
-        print("✅ Novo ponto de dados adicionado com valores simulados!")
-        
+        collector.add_new_data_point(use_evaluation_data=False)
     elif choice == "3":
-        new_data = collector.add_new_data_point(use_evaluation_data=True)
-        print("✅ Novo ponto de dados adicionado com valores da avaliação!")
-        print("\n🚨 ATENÇÃO: Valores críticos baseados nos problemas identificados!")
-        
+        collector.add_new_data_point(use_evaluation_data=True)
     elif choice == "4":
         collector.generate_report()
-        
     elif choice == "5":
         print("👋 Até logo!")
         return
-        
     else:
-        print("❌ Opção inválida!")
+        print("❌ Opção inválida.")
         return
     
-    # Pergunta se quer visualizar o dashboard
+    # Pergunta se quer abrir o dashboard
     if choice in ["1", "2", "3"]:
         view_dashboard = input("\n🌐 Deseja abrir o dashboard? (s/n): ")
         if view_dashboard.lower() == 's':
-            import webbrowser
-            import os
             dashboard_path = os.path.abspath("docs/qrapid/dashboard.html")
             webbrowser.open(f"file://{dashboard_path}")
             print("🌐 Dashboard aberto no navegador!")
-    
-    if choice == "1":
-        collector.generate_sample_data(30)
-    elif choice == "2":
-        collector.add_new_data_point()
-    elif choice == "3":
-        collector.generate_report()
-    elif choice == "4":
-        print("👋 Até logo!")
-    else:
-        print("❌ Opção inválida")
 
 if __name__ == "__main__":
     main()

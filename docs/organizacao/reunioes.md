@@ -88,10 +88,10 @@
 
 | **Campo** | **Informação** |
 |-----------|----------------|
-| **Data** | 06 de Julho de 2025 |
+| **Data** | 06 de Julho de 2025 e 07 de Julho de 2025|
 | **Objetivo** | Preparar para entrega final, PSM-CID, Executar Dashboard do Q-Rapids e executar AgroMart |
 | **Participantes** |• Breno Lucena Cordeiro<br>• Raphael Mendes da Silva<br> • Dannyeclisson Rodrigo Martins da Costa |
-| **Resultados** | • Mudança de Estrutura do Pages para a entrega final<br> • Ajustes no Q-Rapids<br> • Mais tentativas de executar o AgroMart <br> • Métricas PSM-CID|
+| **Resultados** | • Mudança de Estrutura do Pages para a entrega final<br> • Ajustes no Q-Rapids <br> • Mais tentativas de executar o AgroMart <br> • Exposição do backlog <br> • Ranqueamento de tarefas <br> • Disposição de entregáveis paralelos <br> • Criação da tabela de contribuição <br> • PSM-CID: gráfico Burndown <br> • Ajustes no planejamento da Avaliação <br> • Alinhamento de metas <br> • Definição de metas <br> • Extração de Medidas <br> • Propostas de Melhoria |
 
 
 ## Histórico de Versão

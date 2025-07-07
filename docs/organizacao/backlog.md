@@ -61,6 +61,8 @@ Total de pontos da iteração: 13 pontos.
 Período: 16 de junho de 2025 a 7 de julho de 2025
 Duração: 24 dias.
 
+As pontuações de "Instação" deveriam ser baixas, já que os softwares deveriam ser simples de se instalar. Entretanto, o longo do projeto, mostrou-se que a instalação não era simples e portanto foi atribuído uma pontuação muito maior.
+
 Atividades:
 
 - ✅ Compreensão do framework Q-Rapids (8 pontos)

@@ -53,12 +53,6 @@ A finalidade comercial do AGROMART consiste em criar uma solução tecnológica 
     </tr>
     <tr>
       <td>1.2</td>
-      <td>02/06/2025</td>
-      <td>Expansão das questões</td>
-      <td>Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo</td>
-    </tr>
-    <tr>
-      <td>1.3</td>
       <td>03/06/2025</td>
       <td>Revisão</td>
       <td>Leonardo Barcellos, Raphael Mendes da Silva e Breno Lucena</td>

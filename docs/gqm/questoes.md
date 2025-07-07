@@ -48,3 +48,38 @@
 > NORMAN, Donald A. The Design of Everyday Things. Basic Books, 1988.  
 <!--> ISO/IEC 25010:2011 - Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE)-->
 > ISO 9241-110:2020 - Ergonomics of human-system interaction
+
+
+## Histórico de Versão
+
+<table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th>Versão</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Autor(a)</th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr>
+      <td>1.0</td>
+      <td>21/05/2025</td>
+      <td>Criação do documento</td>
+      <td>Leonardo Barcellos</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>22/05/2025</td>
+      <td>Revisão</td>
+      <td>Raphael Mendes</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>02/06/2025</td>
+      <td>Expansão das questões</td>
+      <td>Raphael Mendes da Silva, Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo </td>
+    </tr>
+
+  </tbody>
+</table>

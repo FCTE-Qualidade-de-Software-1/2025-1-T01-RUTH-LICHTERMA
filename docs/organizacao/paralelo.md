@@ -1,12 +1,11 @@
-# Medições de Desenvolvimento do Projeto
+# Entregas Paralelas
+Foram feitas 2 entregas paralelas ao projeto, referentes a:
 
-Feitas de acordo com o PSM-CID
+- [Liberdade a Riscos e Cobertura de contexto - Características da Square](../assets/Liberdade_a_Riscos_e_Cobertura_de_contexto_Square.pptx)
 
-## Gráfico de Burndown
 
-Baseado nos registros de reuniões.
+- [Modelo de Medição (Processo) - ISO 15939](../assets/processo_ISO_15939.pdf)
 
-![Gráfico de Burndown](../assets/burndown.png)
 
 ## Histórico de Versão
 

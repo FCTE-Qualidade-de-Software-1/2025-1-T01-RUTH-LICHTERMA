@@ -1,471 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-Rapid Dashboard - AgroMart</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-        }
-        
-        .header h1 {
-            color: #333;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            color: #666;
-            font-size: 1.2em;
-        }
-        
-        .metrics-overview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .metric-card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #667eea;
-            transition: transform 0.3s ease;
-        }
-        
-        .metric-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .metric-title {
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .metric-value {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        
-        .metric-status {
-            font-size: 0.9em;
-            padding: 5px 10px;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        
-        .status-good {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .status-warning {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
-        .status-poor {
-            background: #f8d7da;
-            color: #721c24;
-        }
-        
-        .charts-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .chart-container {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .chart-title {
-            font-size: 1.3em;
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .full-width {
-            grid-column: 1 / -1;
-        }
-        
-        .legend {
-            margin-top: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-        
-        .legend h3 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-        
-        .legend-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
-        }
-        
-        .legend-item {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background: white;
-            border-radius: 8px;
-        }
-        
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .charts-section {
-                grid-template-columns: 1fr;
-            }
-            
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .metric-value {
-                font-size: 2em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Q-Rapid Dashboard - AgroMart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh; padding: 20px;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .header { text-align: center; margin-bottom: 40px; }
+    .header h1 { font-size: 2.5em; color: #333; }
+    .header p { color: #666; margin-top: 5px; }
+    .metrics-overview { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .metric-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      border-left: 5px solid #667eea;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .metric-card:hover { transform: translateY(-5px); }
+    .metric-title { font-size: 0.9em; color: #666; margin-bottom: 10px; text-transform: uppercase; }
+    .metric-value { font-size: 2.5em; font-weight: bold; color: #333; }
+    .metric-status {
+      font-size: 0.9em;
+      padding: 5px 10px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    .status-good { background: #d4edda; color: #155724; }
+    .status-warning { background: #fff3cd; color: #856404; }
+    .status-poor { background: #f8d7da; color: #721c24; }
+    .charts-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .chart-container {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .chart-title { font-size: 1.3em; color: #333; margin-bottom: 20px; text-align: center; }
+    .full-width { grid-column: 1/-1; }
+    .legend {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+    .legend h3 { color: #333; margin-bottom: 15px; }
+    .legend-item { display: flex; align-items: center; margin-bottom: 10px; }
+    .legend-color {
+      width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;
+    }
+    @media(max-width:768px) {
+      .charts-section { grid-template-columns: 1fr; }
+      .header h1 { font-size: 2em; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1> Q-Rapid Dashboard</h1>
-            <p>Monitoramento de Qualidade do Software AgroMart</p>
-            <p><small>Última atualização: <span id="lastUpdate"></span></small></p>
-        </div>
-        
-        <div class="metrics-overview" id="metricsOverview">
-            <!-- Cards de métricas serão inseridos aqui pelo JavaScript -->
-        </div>
-        
-        <div class="charts-section">
-            <div class="chart-container">
-                <div class="chart-title"> Adequação Funcional</div>
-                <canvas id="functionalChart"></canvas>
-            </div>
-            
-            <div class="chart-container">
-                <div class="chart-title"> Usabilidade</div>
-                <canvas id="usabilityChart"></canvas>
-            </div>
-            
-            <div class="chart-container full-width">
-                <div class="chart-title"> Evolução Temporal das Métricas</div>
-                <canvas id="timelineChart"></canvas>
-            </div>
-        </div>
-        
-        <div class="legend">
-            <h3> Legenda das Métricas</h3>
-            <div class="legend-grid">
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #36A2EB;"></div>
-                    <span><strong>M1:</strong> Completude Funcional</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #FF6384;"></div>
-                    <span><strong>M2:</strong> Sucesso em Tarefas</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #4BC0C0;"></div>
-                    <span><strong>M3:</strong> Autonomia do Usuário</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #FFCE56;"></div>
-                    <span><strong>M4:</strong> Navegação Bem-sucedida</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #9966FF;"></div>
-                    <span><strong>M5:</strong> Compreensão CSA</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #FF9F40;"></div>
-                    <span><strong>M6:</strong> Consistência entre Dispositivos</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #FF6B6B;"></div>
-                    <span><strong>M7:</strong> Clareza Visual</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #4ECDC4;"></div>
-                    <span><strong>M8:</strong> Recuperação de Erros</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #45B7D1;"></div>
-                    <span><strong>M9:</strong> Tempo de Aprendizado (min)</span>
-                </div>
-            </div>
-        </div>
+<div class="container">
+  <div class="header">
+    <h1>Q-Rapid Dashboard - AgroMart</h1>
+    <p>Resultados da Avaliação de Qualidade</p>
+    <small>Última atualização: <span id="lastUpdate"></span></small>
+    <div style="margin-top: 15px; padding: 10px; background: rgba(102,126,234,0.1); border-radius: 8px;">
+      <small style="color: #333;">
+        📊 <strong>Métricas Avaliadas:</strong> 
     </div>
+  </div>
 
-    <script>
-        // Dados simulados - em um cenário real, estes viriam de uma API
-        const metricsData = [
-            {
-                date: "2025-06-01",
-                M1_completude_funcional: 82.0,
-                M2_sucesso_tarefas: 88.5,
-                M3_autonomia_usuario: 79.0,
-                M4_navegacao_sucesso: 85.0,
-                M5_compreensao_csa: 83.0,
-                M6_consistencia_dispositivos: 87.5,
-                M7_clareza_visual: 84.0,
-                M8_recuperacao_erros: 78.5,
-                M9_tempo_aprendizado: 16.8
-            },
-            {
-                date: "2025-06-15",
-                M1_completude_funcional: 85.0,
-                M2_sucesso_tarefas: 90.0,
-                M3_autonomia_usuario: 81.0,
-                M4_navegacao_sucesso: 87.5,
-                M5_compreensao_csa: 84.5,
-                M6_consistencia_dispositivos: 89.0,
-                M7_clareza_visual: 86.0,
-                M8_recuperacao_erros: 80.0,
-                M9_tempo_aprendizado: 15.5
-            },
-            {
-                date: "2025-07-01",
-                M1_completude_funcional: 87.5,
-                M2_sucesso_tarefas: 92.0,
-                M3_autonomia_usuario: 83.0,
-                M4_navegacao_sucesso: 89.5,
-                M5_compreensao_csa: 86.0,
-                M6_consistencia_dispositivos: 91.0,
-                M7_clareza_visual: 88.0,
-                M8_recuperacao_erros: 82.5,
-                M9_tempo_aprendizado: 14.2
-            }
-        ];
+  <div class="metrics-overview" id="metricsOverview"></div>
 
-        // Configuração dos nomes das métricas
-        const metricNames = {
-            M1_completude_funcional: { name: "Completude Funcional", unit: "%", target: 85 },
-            M2_sucesso_tarefas: { name: "Sucesso em Tarefas", unit: "%", target: 90 },
-            M3_autonomia_usuario: { name: "Autonomia do Usuário", unit: "%", target: 80 },
-            M4_navegacao_sucesso: { name: "Navegação Bem-sucedida", unit: "%", target: 90 },
-            M5_compreensao_csa: { name: "Compreensão CSA", unit: "%", target: 85 },
-            M6_consistencia_dispositivos: { name: "Consistência Dispositivos", unit: "%", target: 90 },
-            M7_legibilidade_mensagens: { name: "Legibilidade Mensagens", unit: "%", target: 90 },
-            M8_descoberta_carrossel: { name: "Descoberta Carrossel", unit: "%", target: 85 },
-            M9_compreensao_nomenclatura: { name: "Compreensão Nomenclatura", unit: "%", target: 95 },
-            M10_reconhecimento_icones: { name: "Reconhecimento Ícones", unit: "%", target: 85 },
-            M11_prevencao_erros: { name: "Prevenção de Erros", unit: "%", target: 80 },
-            M12_contraste_visual: { name: "Contraste Visual", unit: "%", target: 85 },
-            M13_tempo_aprendizado: { name: "Tempo de Aprendizado", unit: "min", target: 15, invert: true }
-        };
+  <div class="charts-section">
+    <div class="chart-container">
+      <div class="chart-title">Adequação Funcional</div>
+      <canvas id="functionalChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Usabilidade</div>
+      <canvas id="usabilityChart"></canvas>
+    </div>
+  </div>
 
-        // Função para determinar o status da métrica
-        function getMetricStatus(value, target, invert = false) {
-            const threshold = invert ? 
-                (value <= target ? 'good' : value <= target * 1.2 ? 'warning' : 'poor') :
-                (value >= target ? 'good' : value >= target * 0.8 ? 'warning' : 'poor');
-            return threshold;
-        }
+<script>
+  
+const metricNames = {
+  M1_completude_funcional: { name: "Completude Funcional", unit: "%", target: 85 },
+  M4_clareza_mensagens: { name: "Clareza das Mensagens", unit: "%", target: 85 },
+  M5_consistencia_operacional: { name: "Consistência Operacional", unit: "%", target: 10, invert: true },
+  M7_prevencao_erros: { name: "Prevenção de Erros", unit: "%", target: 85 }
+};
 
-        // Função para criar cards de métricas
-        function createMetricCards() {
-            const container = document.getElementById('metricsOverview');
-            const latestData = metricsData[metricsData.length - 1];
-            
-            Object.keys(metricNames).forEach(key => {
-                const metric = metricNames[key];
-                const value = latestData[key];
-                const status = getMetricStatus(value, metric.target, metric.invert);
-                
-                const card = document.createElement('div');
-                card.className = 'metric-card';
-                card.innerHTML = `
-                    <div class="metric-title">${metric.name}</div>
-                    <div class="metric-value">${value}${metric.unit}</div>
-                    <div class="metric-status status-${status}">
-                        ${status === 'good' ? '✅ Meta Atingida' : 
-                          status === 'warning' ? '⚠️ Atenção' : '❌ Abaixo da Meta'}
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-        }
+function getMetricStatus(value, target, invert = false) {
+  if(invert) {
+    return value <= target ? "good" : value <= target*2 ? "warning" : "poor";
+  }
+  return value >= target ? "good" : value >= target*0.5 ? "warning" : "poor";
+}
 
-        // Função para criar gráfico de adequação funcional
-        function createFunctionalChart() {
-            const ctx = document.getElementById('functionalChart').getContext('2d');
-            const latestData = metricsData[metricsData.length - 1];
-            
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Completude Funcional', 'Sucesso em Tarefas', 'Autonomia do Usuário'],
-                    datasets: [{
-                        data: [
-                            latestData.M1_completude_funcional,
-                            latestData.M2_sucesso_tarefas,
-                            latestData.M3_autonomia_usuario
-                        ],
-                        backgroundColor: ['#36A2EB', '#FF6384', '#4BC0C0'],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'bottom'
-                        }
-                    }
-                }
-            });
-        }
+function updateTimestamp() {
+  document.getElementById("lastUpdate").textContent = new Date().toLocaleString("pt-BR");
+}
 
-        // Função para criar gráfico de usabilidade
-        function createUsabilityChart() {
-            const ctx = document.getElementById('usabilityChart').getContext('2d');
-            const latestData = metricsData[metricsData.length - 1];
-            
-            new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: [
-                        'Navegação',
-                        'Compreensão CSA',
-                        'Consistência',
-                        'Clareza Visual',
-                        'Recuperação Erros'
-                    ],
-                    datasets: [{
-                        label: 'Usabilidade Atual',
-                        data: [
-                            latestData.M4_navegacao_sucesso,
-                            latestData.M5_compreensao_csa,
-                            latestData.M6_consistencia_dispositivos,
-                            latestData.M7_clareza_visual,
-                            latestData.M8_recuperacao_erros
-                        ],
-                        backgroundColor: 'rgba(102, 126, 234, 0.2)',
-                        borderColor: '#667eea',
-                        borderWidth: 2,
-                        pointBackgroundColor: '#667eea'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: 100
-                        }
-                    }
-                }
-            });
-        }
+function createMetricCards(latestData) {
+  const container = document.getElementById("metricsOverview");
+  container.innerHTML = "";
+  Object.keys(metricNames).forEach(key => {
+    const metric = metricNames[key];
+    const value = latestData[key] !== undefined ? latestData[key] : 0;
+    const status = getMetricStatus(value, metric.target, metric.invert);
+    const card = document.createElement("div");
+    card.className = "metric-card";
+    card.innerHTML = `
+      <div class="metric-title">${metric.name}</div>
+      <div class="metric-value">${value.toFixed(1)}${metric.unit}</div>
+      <div class="metric-status status-${status}">
+        ${status==="good"?"✅ Meta Atingida":status==="warning"?"⚠️ Atenção":"🔴 Crítico"}
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
 
-        // Função para criar gráfico de evolução temporal
-        function createTimelineChart() {
-            const ctx = document.getElementById('timelineChart').getContext('2d');
-            
-            const datasets = [
-                { key: 'M1_completude_funcional', color: '#36A2EB' },
-                { key: 'M2_sucesso_tarefas', color: '#FF6384' },
-                { key: 'M4_navegacao_sucesso', color: '#FFCE56' },
-                { key: 'M5_compreensao_csa', color: '#9966FF' },
-                { key: 'M6_consistencia_dispositivos', color: '#FF9F40' }
-            ].map(item => ({
-                label: metricNames[item.key].name,
-                data: metricsData.map(d => d[item.key]),
-                borderColor: item.color,
-                backgroundColor: item.color + '20',
-                tension: 0.4,
-                fill: false
-            }));
+function createFunctionalChart(latestData) {
+  new Chart(document.getElementById("functionalChart"),{
+    type:"doughnut",
+    data:{
+      labels:["Completude Funcional","Incompleto"],
+      datasets:[{
+        data:[latestData.M1_completude_funcional,100-latestData.M1_completude_funcional],
+        backgroundColor:["#36A2EB","#e0e0e0"]
+      }]
+    },
+    options:{ responsive:true }
+  });
+}
 
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: metricsData.map(d => new Date(d.date).toLocaleDateString('pt-BR')),
-                    datasets: datasets
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'bottom'
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100
-                        }
-                    }
-                }
-            });
-        }
+function createUsabilityChart(latestData) {
+  new Chart(document.getElementById("usabilityChart"),{
+    type:"bar",
+    data:{
+      labels:["Clareza Mensagens","Consistência","Prevenção Erros"],
+      datasets:[{
+        label:"Usabilidade",
+        data:[
+          latestData.M4_clareza_mensagens,
+          latestData.M5_consistencia_operacional,
+          latestData.M7_prevencao_erros
+        ],
+        backgroundColor:["#FF6384","#9966FF","#4BC0C0"]
+      }]
+    },
+    options:{ responsive:true }
+  });
+}
 
-        // Função para atualizar timestamp
-        function updateTimestamp() {
-            document.getElementById('lastUpdate').textContent = 
-                new Date().toLocaleString('pt-BR');
-        }
 
-        // Inicializar dashboard
-        document.addEventListener('DOMContentLoaded', function() {
-            updateTimestamp();
-            createMetricCards();
-            createFunctionalChart();
-            createUsabilityChart();
-            createTimelineChart();
-        });
-    </script>
+// Carrega JSON dinamicamente
+fetch("data/metrics_data.json")
+  .then(r=>r.json())
+  .then(data=>{
+    if(data.length){
+      const latest=data[data.length-1];
+      updateTimestamp();
+      createMetricCards(latest);
+      createFunctionalChart(latest);
+      createUsabilityChart(latest);
+    }
+  })
+  .catch(err=>console.error("Erro ao carregar dados:",err));
+</script>
 </body>
 </html>

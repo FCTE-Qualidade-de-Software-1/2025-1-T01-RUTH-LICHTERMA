@@ -1,51 +1,89 @@
-# Avaliação
-
-## Planejamento da Avaliação
-
-### 1. Objetivo da Avaliação
-Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabilidade, identificando pontos críticos e oportunidades de melhoria, utilizando métricas baseadas no modelo GQM.
-
-### 2. Escopo
-- Funcionalidades principais do aplicativo (Cadastro, Login, Instalação, Uso, Compra)
-- Usabilidade (legibilidade, navegação, nomenclatura, prevenção de erros, consistência, etc.)
-
-### 3. Métricas a serem avaliadas
-- M1: Completude Funcional
-- M4: Navegação
-- M5: Consistência entre Dispositivos
-- M7: Legibilidade das Mensagens
-- M8: Descoberta de Carrossel
-- M9: Compreensão de Nomenclatura
-- M10: Clareza dos Ícones
-- M11: Prevenção de Erros
-- M12: Compreensão CSA
-
-### 4. Metodologia
-- **Revisão de documentação:** Analisar requisitos, fluxos e telas fornecidas.
-- **Testes exploratórios:** Navegar pelo sistema (quando possível) para identificar problemas de usabilidade e funcionalidade.
-- **Análise de capturas de tela:** Avaliar funcionalidades e usabilidade a partir das imagens fornecidas.
-- **Checklist de métricas:** Preencher tabela de métricas com valor atual, meta, status e justificativa.
-
-### 5. Critérios de Aceite
-- Todas as métricas críticas (🔴) devem ter plano de ação definido.
-- Métricas com status "Atingido" (✅) devem ser documentadas como boas práticas.
-- O relatório deve conter evidências (prints, tabelas, justificativas).
-
-
-
 ## Avaliação de Adequação Funcional - Observações
 
 ### M1 - Cobertura de Implementação Funcional
-**Valor Atual: 75% | Meta: ≥85% | Status: 🔴 Crítico**
+**Valor Atual: 60% | Meta: ≥85% | Status: 🔴 Crítico**
 
-- **(F1) Cadastro**: não foi possível verificar, pois não há ambiente de testes funcional disponível.  
-- **(F2) Login**: não foi possível verificar o fluxo completo, considerando apenas as capturas de tela.  
+- **(F1) Cadastro**: não há opção de cadastro na plataforma web.
+
+<center>
+<img src="../../assets/sem_cadastro.png" alt="Tela de login inicial | Web" width="300"/>
+</center>
+<center>
+<b>Figura 1</b>: Tela de Inicial
+</center>
+<br>
+
+- **(F2) Login**: há várias formas de login, seja no aplicativo ou na CSA.
+<center>
+<img src="../../assets/profile.jpeg" alt="Tela de Perfil | Sem CSA" width="300"/>
+</center>
+<center>
+<b>Figura 2</b>: Tela de Perfil | Sem CSA
+</center>
+<br>
+<center>
+<img src="../../assets/login_csa.jpeg" alt="Tela de Login em CSA" width="300"/>
+</center>
+<center>
+<b>Figura 3</b>: Tela de Login em CSA
+</center>
+<br>
+
 - **(F3) Instalação**:
   - Não há aplicativo publicado em lojas oficiais (Google Play, App Store).  
-  - Não existe um APK pronto para download direto.  
-  - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).  
-- **(F4) Uso**: não pôde ser avaliado de forma completa devido à ausência de ambiente interativo funcional.  
-- **(F5) Compra**: não foi possível verificar as operações de compra em funcionamento, considerando que apenas as telas estáticas foram fornecidas.
+  - Não existe um APK pronto para download direto.
+  - No docs do Agromar, a [página de instalação](https://agromart.github.io/docs/docs/instalacao/instalacao) está vazia.
+  - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).
+  - O tutorial pede que o usuário insira o cartão de crédito na plataforma Heroku, o que tem potencial de afastar futuros contribuídores de realizar deploy na aplicação.
+
+- **(F4) Uso**:
+
+<center>
+<img src="../../assets/profile_home.jpeg" alt="Tela de Perfil | Principal" width="300"/>
+</center>
+<center>
+<b>Figura 4</b>: Tela de Perfil | Principal
+</center>
+<br>
+<center>
+<img src="../../assets/profile_configs.jpeg" alt="Tela de Perfil | Configurações" width="300"/>
+</center>
+<center>
+<b>Figura 5</b>: Tela de Perfil | Configurações
+</center>
+<br>
+<center>
+<img src="../../assets/csa.jpeg" alt="Tela de Busca" width="300"/>
+</center>
+<center>
+<b>Figura 6</b>: Tela de Busca
+</center>
+<br>
+<center>
+<img src="../../assets/historico.jpeg" alt="Historico" width="300"/>
+</center>
+<center>
+<b>Figura 7</b>: Historico
+</center>
+<br>
+<center>
+<img src="../../assets/pedidos.jpeg" alt="Tela de Pedido" width="300"/>
+</center>
+<center>
+<b>Figura 8</b>: Tela de Pedido
+</center>
+<br>
+
+- **(F5) Compra**: não foi possível verificar as operações de compra em funcionamento, considerando que apenas as telas estáticas foram fornecidas.  
+
+<center>
+<img src="../../assets/compra.jpeg" alt="Tela de Compra" width="300"/>
+</center>
+<center>
+<b>Figura 9</b>: Tela de Compra
+</center>
+
+Das 5 funcionalidades, 3 foram encontradas, resultando em **60% para a M1**.
 
 #### Proposta de melhoria para M1:
 - **Criar ambiente de teste funcional** para validar todas as funcionalidades
@@ -55,138 +93,166 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 ## Avaliação de Usabilidade - Observações
 
-### M7 - Legibilidade das Mensagens
-**Valor Atual: 35% | Meta: ≥90% | Status: 🔴 Crítico**
+### M4 - Clareza das Mensagens
+**Valor Atual: 9,09% | Meta: ≥85% | Status: 🔴 Crítico**
 
-- As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
+* 1) As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
 <center><p>Fonte clara</p></center>
 <center>
 <img src="../../assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" width="300"/>
 </center>
 <center>
-**Figura 1**: Tela de Inicial
+<b>Figura 10</b>: Tela sem login
 </center>
 
-#### Proposta de melhoria para M7:
-- **Aplicar alto contraste** seguindo WCAG 2.1 (mínimo 4.5:1)
-- **Aumentar peso da fonte** (bold/semi-bold) para melhor legibilidade
-- **Implementar modo escuro/claro** para usuários
 
-### M8 - Descoberta de Carrossel
-**Valor Atual: 25% | Meta: ≥85% | Status: 🔴 Crítico**
 
-- Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
+<!-- ### M8 - Descoberta de Carrossel
+**Valor Atual: 25% | Meta: ≥85% | Status: 🔴 Crítico**-->
+<br>
+
+* 2) Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
 <center><p>Carrosel</p></center>
 <center>
 <img src="../../assets/carrossel.jpeg" alt="Carrossel" width="300"/>
 </center>
 <center>
-**Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
+<b>Figura 11</b>: Tela inicial do aplicativo mostrando o carrossel.
 </center>
 
-#### Proposta de melhoria para M8:
+<!-- ### M12 - Compreensão CSA
+**Valor Atual: 85% | Meta: ≥80% | Status: ✅ Atingido**
+ -->
+ <br>
+
+* 3) A tela de busca de CSA (Figura 6) está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
+
+<!-- ### M9 - Compreensão de Nomenclatura
+**Valor Atual: 55% | Meta: ≥95% | Status: 🔴 Crítico** -->
+
+* 4) Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, que é composto por pessoas que podem ter nível de escolaridade variada. O termo:
+
+- _Login_ pode ser visto na figura 1 e 2; 
+- _Home_ na figura 4;
+- _Profile_ na figura 5;
+- _Search_ na figura 6; e
+- _History_ na figura 7.
+
+
+<br>
+
+<!-- ### M10 - Clareza dos Ícones
+**Valor Atual: 45% | Meta: ≥85% | Status: 🔴 Crítico** -->
+
+* 5) Alguns ícones do aplicativo não são intuitivos ou podem gerar interpretações ambíguas, como o ícone de menu hambúrguer sendo usado para representar "Histórico" (figura 7).
+
+* 6) O histórico, representado pela figura 7, apresenta uma lista de compras. Essa lista não dá clareza ao usuário sobre o que exatamente ele comprou, visto que falta o campo "nome do produto". Atualmente, só existem os campos "vendedor", "data de compra" e "valor"
+
+Logo, das 11 mensagens avaliadas somente 1 apresentou-se com clareza, totalizando **9,09% na métrica M4**.
+
+#### Propostas de melhoria para M4:
+- **Aplicar alto contraste** seguindo WCAG 2.1 (mínimo 4.5:1)
+- **Aumentar peso da fonte** (bold/semi-bold) para melhor legibilidade
+- **Implementar modo escuro/claro** para usuários
 - **Redesenhar indicadores** com cores contrastantes e tamanho maior
 - **Adicionar setas de navegação** laterais para indicar swipe
 - **Incluir números nos indicadores** (1/3, 2/3, 3/3)
-
-### M12 - Compreensão CSA
-**Valor Atual: 85% | Meta: ≥80% | Status: ✅ Atingido**
-
-- A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
-
-<center><p>Tela de CSA</p></center>
-<center>
-<img src="../../assets/csa.jpeg" alt="Tela de CSA" width="300"/>
-</center>
-<center>
-**Figura 3**: Tela de csa 
-</center>
-
-#### Proposta de melhoria para M12:
 - **Manter padrão visual** como referência para outras telas
 - **Adicionar filtros de busca** por região ou tipo de produto
-
-### M9 - Compreensão de Nomenclatura
-**Valor Atual: 55% | Meta: ≥95% | Status: 🔴 Crítico**
-
-- Alguns termos do aplicativo estão apresentados em inglês (por exemplo, *History*), o que pode dificultar o entendimento do público-alvo, formado majoritariamente por usuários sem familiaridade com outros idiomas.
-
-<center>
-<img src="../../assets/home.jpeg" alt="Home" width="300"/>
-</center>
-
-<center>
-<img src="../../assets/search.jpeg" alt="Search" width="300"/>
-</center>
-
-- O ícone da tela de histórico é representado por três linhas (menu tipo hambúrguer), o que pode gerar dúvidas, pois não está claramente identificado como "Histórico".
-
-<center>
-<img src="../../assets/historico.jpeg" alt="Historico" width="300"/>
-</center>
-
-#### Proposta de melhoria para M9:
 - **Traduzir todos os termos** para português (History → Histórico, Search → Buscar)
 - **Substituir ícone hambúrguer** por ícone de relógio para histórico
 - **Padronizar nomenclatura** com glossário específico do domínio agrícola
-
-
-### M10 - Clareza dos Ícones
-**Valor Atual: 45% | Meta: ≥85% | Status: 🔴 Crítico**
-
-- Alguns ícones do aplicativo não são intuitivos ou podem gerar interpretações ambíguas, como o ícone de menu hambúrguer sendo usado para representar "Histórico".
-
-#### Proposta de melhoria para M10:
 - **Substituir ícones ambíguos** por símbolos universalmente reconhecidos
 - **Adicionar labels descritivos** acompanhando ícones críticos
 - **Padronizar biblioteca de ícones** (Material Design ou iOS Guidelines)
+- **Adicionar breadcrumbs** para orientação de navegação
 
-### M5 - Consistência entre Dispositivos
-**Valor Atual: 82% | Meta: ≥80% | Status: ✅ Atingido**
 
-- O aplicativo apresenta boa responsividade e funcionamento consistente no ambiente mobile, o que é positivo.
+### M5 - Consistência Operacional
+**Valor Atual: 60% | Meta: ≤10% | Status: 🔴 Crítico**
+
+- A versão web apresenta diferenças quanto a responsividade dependendo do dispositivo utilizado:
+
+<center>
+<img src="../../assets/ipad_air.png" alt="Problema de responsividade no Ipad Air" width="300"/>
+</center>
+<center>
+<b>Figura 12</b>: Problema de responsividade no Ipad Air.
+</center>
+
+<center>
+<img src="../../assets/iphone_pro_max.png" alt="Responsividade no Iphone 14 Pro Max praticamente adequadal" width="300"/>
+</center>
+<center>
+<b>Figura 13</b>: Responsividade no Iphone 14 Pro Max praticamente adequada.
+</center>
+
+<center>
+<img src="../../assets/iphone_xr.png" alt="Problema de responsividade no Iphone XR" width="300"/>
+</center>
+<center>
+<b>Figura 14</b>: Problema de responsividade no Iphone XR.
+</center>
+
+<center>
+<img src="../../assets/s20.png" alt="Responsividade no Galaxy S20 Ultra praticamente adequadal" width="300"/>
+</center>
+<center>
+<b>Figura 16</b>: Problema de responsividade no Galaxy S20 Ultra.
+</center>
+
+
+- Já no aplicativo, como visto na figura 10, não houveram problemas.
+
+Dadas as 5 mesmas telas em dispotivos diferentes, 3 possuem problemas de implementação responsividade, totalizando **60% na métrica M5**.
 
 #### Proposta de melhoria para M5:
-- **Documentar guidelines** de design responsivo para a equipe
+- **Documentar guidelines** de design responsivo para a equipe.
 - **Expandir testes** para diferentes tamanhos de tela
 
-### M4 - Navegação Bem-sucedida  
+<!-- ### M4 - Navegação Bem-sucedida  
 **Valor Atual: 75% | Meta: ≥90% | Status: 🔴 Crítico**
 
 - De forma geral, o usuário consegue acessar e navegar pelas telas, compreendendo os textos e imagens apresentados.  
 - Contudo, a utilização de termos estrangeiros pode ser um obstáculo para alguns usuários, prejudicando a completude e a facilidade de uso.
-- O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão.
+- O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão. -->
 
-#### Proposta de melhoria para M4:
-- **Traduzir termos estrangeiros** para português
-- **Aumentar contraste** entre elementos interativos
-- **Adicionar breadcrumbs** para orientação de navegação
 
-### M11 - Prevenção de Erros
-**Valor Atual: 15% | Meta: ≥80% | Status: 🔴 Crítico**
+### M7 - Prevenção de Erros
+**Valor Atual: 100% | Meta: ≥85% | Status: ✅ Atingido**
 
-- Ainda não foram identificados mecanismos claros de prevenção a operações incorretas, tampouco feedbacks de erro visíveis no sistema. Recomenda-se mapear esses pontos futuramente para aumentar a segurança operacional e evitar falhas de uso.
+Em qualquer software, é capaz do usuário se encontrar preso em uma tela sem volta, sendo obrigado a fechar o aplicativo. Para evitar esse tipo de erro, perceba que as 8 telas mobile disponibilizam formas de sair da tela, seja através de:
 
-#### Proposta de melhoria para M11:
-- **Implementar validação em tempo real** em formulários críticos
-- **Criar confirmações** para ações irreversíveis (compras, exclusões)
-- **Desenvolver mensagens de erro claras** em português
+* uma seta para voltar a página anterior; ou
+* o menu inferior com ícones clicáveis com acesso direto a páginas chave do aplicativo.
 
-## 📊 Resumo das Métricas Avaliadas
 
-| Métrica | Valor Atual | Meta | Status | Justificativa Principal |
-|---------|-------------|------|--------|------------------------|
-| M1 - Completude Funcional | 75% | ≥85% | 🔴 Crítico | Funcionalidades não testáveis |
-| M4 - Navegação | 75% | ≥90% | 🔴 Crítico | Problemas de nomenclatura |
-| M5 - Consistência | 82% | ≥80% | ✅ Atingido | Boa responsividade mobile |
-| M7 - Legibilidade | 35% | ≥90% | 🔴 Crítico | Fontes com baixo contraste |
-| M8 - Carrossel | 25% | ≥85% | 🔴 Crítico | Indicadores imperceptíveis |
-| M9 - Nomenclatura | 55% | ≥95% | 🔴 Crítico | Termos em inglês |
-| M10 - Ícones | 45% | ≥85% | 🔴 Crítico | Ícones ambíguos |
-| M11 - Prevenção | 15% | ≥80% | 🔴 Crítico | Ausência de validações |
-| M12 - CSA | 85% | ≥80% | ✅ Atingido | Interface bem estruturada |
+
+A figura 9, relacionada a funcionalidade "Compras", mostra mais um padrão de erro:
+* **Padrão de erro**: adicionar quantidades além do desejado de um mesmo item.
+* **Prevenção a operação incorreta**: opção de diminuir as quantidades selecionadas de um mesmo item.
+
+
+Já na figura 8:
+* **Padrão de erro**: adicionar itens indesejados no pedido.
+* **Prevenção a operação incorreta**: opção de remover um item dos pedidos
+
+Dessa forma, totaliza-se:
+- Nº de funcionalidades que implementam prevenção de erros: 3
+- Nº total de padrões de operações incorretas: 3
+
+Resultando em **100% na métrica M7**.
+
+## Resumo das Métricas Avaliadas
+
+| Métrica | Valor Atual | Meta | Status |
+|---------|-------------|------|--------|
+| M1 - Completude Funcional | 60% | ≥85% | 🔴 Crítico |
+| M4 - Clareza das Mensagens | 9,09% | ≥85% | 🔴 Crítico |
+| M5 - Consistência Operacional | 60% | ≤10% | 🔴 Crítico |
+| M7 - Prevenção a erros | 100% | ≥85% | ✅ Atingido |
 
 
 ## Histórico de Versão
@@ -229,6 +295,12 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
       <td>06/07/2025</td>
       <td>Adição de propostas de melhoria para todas as métricas e correção de caminhos das imagens</td>
       <td>Luis Zarbielli, Dannyeclisson</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>06/07/2025</td>
+      <td>Alinhamento com as métricas SQUARE escolhidas, exclusão de métricas redundantes, combinação de justificativas das medidas, adição de novas jusitifativas e provas, ajuste das metas de todas as métricas, cálculo das medidas de todas as métricas</td>
+      <td>Raphael Mendes da Silva e Breno Lucena</td>
     </tr>
   </tbody>
 </table>
