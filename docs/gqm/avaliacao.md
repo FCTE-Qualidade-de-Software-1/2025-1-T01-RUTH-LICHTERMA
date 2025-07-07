@@ -57,11 +57,9 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - As descrições dos menus apresentam uma fonte com cor muito clara, dificultando a leitura em alguns dispositivos.
 
+<center><p>Fonte clara</p></center>
 <center>
-<img src="docs/assets/tela-com-texto-ruim.jpeg" alt="Fonte clara" widht="300"/>
-</center>
-<center>
-**Figura 1**: Tela de Inicial
+![Questões e Métricas - Adequação Funcional](../assets/tela-com-texto-ruim.jpeg)
 </center>
 
 ### M8 - Descoberta de Carrossel
@@ -69,11 +67,9 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - Na tela inicial há um carrossel de imagens, porém os indicadores visuais que evidenciam tratar-se de um carrossel são difíceis de perceber, pois as três bolinhas estão quase imperceptíveis devido à sua cor. O usuário precisa arrastar manualmente para descobrir outras imagens, o que pode gerar confusão.
 
+<center><p>Carrosel</p></center>
 <center>
-<img src="docs/assets/carrossel.jpeg" alt="Carrossel" widht="300"/>
-</center>
-<center>
-**Figura 2**: Tela inicial do aplicativo mostrando o carrossel 
+![Questões e Métricas - Adequação Funcional](../assets/carrossel.jpeg)
 </center>
 
 ### M12 - Compreensão CSA
@@ -81,11 +77,9 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
 
 - A tela de busca de CSA está bem estruturada, apresentando imagens de pontos específicos de cada região administrativa, acompanhadas do respectivo nome, o que facilita a compreensão.
 
+<center><p>Tela de CSA</p></center>
 <center>
-<img src="docs/assets/csa.jpeg" alt="Tela de CSA" widht="300"/>
-</center>
-<center>
-**Figura 3**: Tela de csa 
+![Questões e Métricas - Adequação Funcional](../assets/csa.jpeg)
 </center>
 
 ### M9 - Compreensão de Nomenclatura
