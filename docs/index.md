@@ -141,7 +141,7 @@ Conheça os membros da equipe <strong>Ruth Lichterman</strong>, estudantes dedic
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center; font-weight: bold;">1.1</td>
     <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">06/07/2025</td>
     <td style="padding: 12px; border: 1px solid #ddd;">Revisão</td>
-    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Dannyeclisson Rodrigo</td>
+    <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Luis Zarbielli, Dannyeclisson Rodrigo</td>
   </tr>
 </table>
 </div>
