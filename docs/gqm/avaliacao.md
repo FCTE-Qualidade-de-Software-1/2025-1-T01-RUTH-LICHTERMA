@@ -89,9 +89,13 @@ Das 5 funcionalidades, 3 foram encontradas, resultando em **60% para a M1**.
 - **Criar ambiente de teste funcional** para validar todas as funcionalidades
 - **Publicar aplicativo nas lojas oficiais** (Google Play e App Store)
 - **Gerar APK de demonstração** para testes diretos  
+### M2 - Precisão Computacional
 
 
-## Avaliação de Usabilidade - Observações
+
+### M3 - Apropriação Funcional
+
+## Avaliação de Usabilidade
 
 ### M4 - Clareza das Mensagens
 **Valor Atual: 9,09% | Meta: ≥85% | Status: 🔴 Crítico**
@@ -209,6 +213,17 @@ Dadas as 5 mesmas telas em dispotivos diferentes, 3 possuem problemas de impleme
 - Contudo, a utilização de termos estrangeiros pode ser um obstáculo para alguns usuários, prejudicando a completude e a facilidade de uso.
 - O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão. -->
 
+### M6  Completude e Facilidade de Uso da Documentação do Usuário
+**Valor Atual Estimado: 70% | Meta: ≥85% | Status: ⚠️ Abaixo da meta**
+
+- Os manuais explicam as funcionalidades do aplicativo, fluxo de uso e integrações, ajudando o usuário a entender o propósito e operação do sistema.
+- Não há instruções claras para baixar o app mobile, clonar o projeto ou configurar o ambiente local.
+
+
+<!--
+- Ausência de links diretos para APK 
+- versões desatualizadas de dependências, que pode gerar confusão técnica.
+-->
 
 ### M7 - Prevenção de Erros
 **Valor Atual: 100% | Meta: ≥85% | Status: ✅ Atingido**

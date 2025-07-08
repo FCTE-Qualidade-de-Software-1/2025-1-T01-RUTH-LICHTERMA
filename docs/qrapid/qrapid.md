@@ -6,11 +6,36 @@ O **Q-Rapid (Quality Rapid Application Development)** é uma metodologia que com
 
 ## Por que usar Q-Rapid no AgroMart?
 
-Conforme já mencionado na contextualização do projeto, escolhemos Q-Rapid por sua **pertinência aos objetivos do AgroMart**, priorizando características como:
+1) Monitoramento contínuo e visual
 
-- **Robustez:** Garantir que o sistema seja confiável
-- **Adaptabilidade:** Capacidade de se ajustar às necessidades dos usuários CSA
-- **Segurança:** Proteção dos dados dos agricultores e consumidores
+A plataforma oferece **dashboard dinâmico** que mostra o estado atual da qualidade do projeto, incluindo aspectos como:
+
+- Adequação funcional
+- Usabilidade
+- Manutenibilidade
+- Confiabilidade
+- Segurança
+
+
+2) Apoio à gestão de requisitos não funcionais
+
+O Q-Rapids ajuda a detectar quando requisitos de qualidade estão sendo comprometidos, permitindo **reagir antes que os problemas se agravem**.
+
+3) Modular e integrável
+
+O Q-Rapids é composto por módulos independentes que podem ser usados conforme a necessidade da equipe, como:
+
+- **Coletor de dados**
+- **Processador de métricas**
+- **Motor de recomendação**
+- **Dashboard interativo**
+- **Geração de relatórios**
+
+## Referência
+
+> Q-Rapids Dashboard. *GitHub Repository*. Disponível em: [https://github.com/q-rapids/qrapids-dashboard/wiki/User-Guide](https://github.com/q-rapids/qrapids-dashboard/wiki/User-Guide). Acesso em: 5 jul. 2025.
+
+
 
 ## Histórico de Versões
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
@@ -34,6 +59,12 @@ Conforme já mencionado na contextualização do projeto, escolhemos Q-Rapid por
       <td>05/07/2025</td>
       <td>Revisão</td>
       <td>Leonardo Barcellos</td>
+    </tr>
+        <tr>
+      <td>1.2</td>
+      <td>05/07/2025</td>
+      <td>Revisão</td>
+      <td>Breno Lucena</td>
     </tr>
   </tbody>
 </table>

@@ -19,12 +19,12 @@ nav:
   - Fase 1:
     - Contextualização: contextualizacao.md
     - Q-rapid: qrapid/qrapid.md
-    - PSM/CDI: psm-cdi.md
   - Fase 2:
     - Objetivos: gqm/objetivos.md
     - Questões e Hipóteses: gqm/questoes.md
     - Abstraction Sheets: gqm/abstractionsheets.md
     - Definição das Métricas: gqm/metricas.md
+    - Definição das Metas: gqm/metas.md
   - Fase 3:
     - Planejamento da Avaliação: gqm/planejamentofase3.md
   - Fase 4:

@@ -88,13 +88,13 @@ Esta seção apresenta um conjunto de questões fundamentais para a análise e c
 **A2:** As funcionalidades centrais do AgroMart incluem: **Comprar produtos** e **Adicionar produtos**.
 
 ### Q3: Quais funções merecem maior dedicação durante a avaliação?
-**A3:** Todas as funções merecem dedicação, com foco especial na **acessibilidade**.
+**A3:** Todas as funções merecem dedicação, com foco especial na **usabilidade**.
 
 ### Q4: Quantas janelas de interação de dados com o usuário o produto possui?
 **A4:** O sistema apresenta **8 interfaces principais de interação obrigatória**.
 
 ### Q5: Como é o ambiente no qual o produto será inserido?
-**A5:** O AgroMart será utilizado em um contexto onde o **nível de conhecimento tecnológico dos usuários é intermediário**.
+**A5:** O AgroMart será utilizado em um contexto onde o **nível de conhecimento tecnológico é alto**.
 
 ### Q6: Qual o nível de conhecimento exigido dos usuários em relação ao domínio da aplicação em si?
 **A6:** O conhecimento sobre o **domínio CSA e agricultura sustentável é médio, tendendo para simples**, considerando que muitos usuários já participam ou conhecem esses conceitos.
@@ -109,7 +109,7 @@ Esta seção apresenta um conjunto de questões fundamentais para a análise e c
 **A9:** Os requisitos incluem **Android e Computador Linux**.
 
 ### Q10: Quais tecnologias empregadas no projeto?
-**A10:** As tecnologias utilizadas incluem **Javascript, React**, entre outras.
+**A10:** As tecnologias utilizadas incluem **Javascript, React e TypeScript**.
 
 
 ## Histórico de Versão
@@ -133,7 +133,7 @@ Esta seção apresenta um conjunto de questões fundamentais para a análise e c
       <td>1.1</td>
       <td>02/07/2025</td>
       <td>Revisão</td>
-      <td>Leonardo Barcellos</td>
+      <td>Leonardo Barcellos, Breno Lucena</td>
     </tr>
   </tbody>
 </table>
