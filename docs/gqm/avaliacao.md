@@ -6,7 +6,7 @@
 - **(F1) Cadastro**: não há opção de cadastro na plataforma web.
 
 <center>
-<img src="../../assets/sem_cadastro.png" alt="Tela de login inicial | Web" width="300"/>
+<img src="../../assets/sem_cadastro.png" alt="Tela de login inicial | Web" width="800"/>
 </center>
 <center>
 <b>Figura 1</b>: Tela de Inicial
@@ -30,11 +30,11 @@
 <br>
 
 - **(F3) Instalação**:
-  - Não há aplicativo publicado em lojas oficiais (Google Play, App Store).  
-  - Não existe um APK pronto para download direto.
-  - No docs do Agromar, a [página de instalação](https://agromart.github.io/docs/docs/instalacao/instalacao) está vazia.
-  - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).
-  - O tutorial pede que o usuário insira o cartão de crédito na plataforma Heroku, o que tem potencial de afastar futuros contribuídores de realizar deploy na aplicação.
+    - Não há aplicativo publicado em lojas oficiais (Google Play, App Store).  
+    - Não existe um APK pronto para download direto.
+    - No docs do Agromar, a [página de instalação](https://agromart.github.io/docs/docs/instalacao/instalacao) está vazia.
+    - O tutorial de parte do deploy encontra-se armazenado em um repositório separado das aplicações ([Ajuda AgroMart](https://github.com/AgroMart/ajuda-agromart)).
+    - O tutorial pede que o usuário insira o cartão de crédito na plataforma Heroku, o que tem potencial de afastar futuros contribuídores de realizar deploy na aplicação.
 
 - **(F4) Uso**:
 
