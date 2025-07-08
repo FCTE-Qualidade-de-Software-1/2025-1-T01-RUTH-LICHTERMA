@@ -93,6 +93,15 @@
 | **Participantes** |• Breno Lucena Cordeiro<br>• Raphael Mendes da Silva<br> • Dannyeclisson Rodrigo Martins da Costa |
 | **Resultados** | • Mudança de Estrutura do Pages para a entrega final<br> • Ajustes no Q-Rapids <br> • Mais tentativas de executar o AgroMart <br> • Exposição do backlog <br> • Ranqueamento de tarefas <br> • Disposição de entregáveis paralelos <br> • Criação da tabela de contribuição <br> • PSM-CID: gráfico Burndown <br> • Ajustes no planejamento da Avaliação <br> • Alinhamento de metas <br> • Definição de metas <br> • Extração de Medidas <br> • Propostas de Melhoria |
 
+## Reunião 9
+
+| **Campo** | **Informação** |
+|-----------|----------------|
+| **Data** | 07 de Julho de 2025|
+| **Objetivo** | Preparar para entrega final, PSM-CID, Executar Dashboard do Q-Rapids e executar AgroMart |
+| **Participantes** |• Breno Lucena Cordeiro<br>• Raphael Mendes da Silva<br> • Dannyeclisson Rodrigo Martins da Costa <br>• Luis Fernando de Sousa Zarbielli <br>• Leonardo Porporati Barcellos |
+| **Resultados** | Separação da fase 2 e 3 no Pages <br>• Mudança de Estrutura do Pages para a entrega final<br> • Ajustes no Q-Rapids <br> • Mais tentativas de executar o AgroMart <br> • Preenchimento da tabela de contribuição <br> • PSM-CID: gráficos de desempenho e métrica de custo <br> • Ajustes no planejamento da Avaliação <br> • Planejamento e avaliação das métricas M2, M3 e M6 <br> • Ajustes nas propostas de melhoria <br> • Ação de melhoria no figma |
+
 
 ## Histórico de Versão
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
@@ -134,6 +143,12 @@
       <td>06/07/2025</td>
       <td>Atualização de erros nas descrições das reuniões e adição da reunião 8.</td>
       <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>07/07/2025</td>
+      <td>Reunião 9</td>
+      <td>Raphael Mendes da Silva, Breno Lucena, Luis Zarbielli e Dannyeclisson</td>
     </tr>
   </tbody>
 </table>

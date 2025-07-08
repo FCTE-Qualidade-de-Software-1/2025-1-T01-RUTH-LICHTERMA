@@ -14,7 +14,15 @@ M1 ≥ 85%
 ```
 ## Meta da M2 (Precisão Computacional)
 
-c
+Baseadas nas seguintes hipóteses:
+
+- `Hipótese 2: 90% das operações de compra e adição de produtos executam sem erros.`
+- `Hipótese 3: 80% dos usuários conseguem executar funcionalidades sem suporte técnico.`
+
+Cálculo da Meta:
+
+Em uma sessão do aplicativo, um usuário deve ter consseguir utilizá-lo sem chamar suporte técnico. Consideramos isso um 100% e qualquer pedido de ajuda um 0%.
+
 
 ## Meta da M3 (Apropriação Funcional)
 

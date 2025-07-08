@@ -47,10 +47,13 @@ class QRapidDataCollector:
         Define valores reais da avaliação do laudo fornecido
         """
         evaluation_metrics = {
-            "M1_completude_funcional": 60.0,     # laudo
-            "M4_clareza_mensagens": 9.09,        # laudo
-            "M5_consistencia_operacional": 60.0, # laudo
-            "M7_prevencao_erros": 100.0          # laudo
+            "M1_completude_funcional": 60.0,
+            "M2_precisao_computacional": 0.0,
+            "M3_apropriacao_funcional": 100.0,
+            "M4_clareza_mensagens": 9.09,
+            "M5_consistencia_operacional": 60.0,
+            "M6_documentacao_usuario": 60.0,
+            "M7_prevencao_erros": 100.0
         }
         return evaluation_metrics
     

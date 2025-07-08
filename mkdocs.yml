@@ -29,8 +29,8 @@ nav:
     - Planejamento da Avaliação: gqm/planejamentofase3.md
   - Fase 4:
     - Avaliação das Métricas: gqm/avaliacao.md
-    - Definição das Métricas (Q-Rapids): qrapid/metricas.md
     - Q-Rapids Dashboard: qrapid/dashboard.md
+    - Ação de Melhoria: melhoria.md
 
 
 theme:

@@ -1,7 +1,7 @@
 ## Avaliação de Adequação Funcional - Observações
 
 ### M1 - Cobertura de Implementação Funcional
-**Valor Atual: 60% | Meta: ≥85% | Status: 🔴 Crítico**
+**Valor Atual: 60% | Meta: ≥85% | Status: ⚠️ Abaixo da meta**
 
 - **(F1) Cadastro**: não há opção de cadastro na plataforma web.
 
@@ -88,12 +88,33 @@ Das 5 funcionalidades, 3 foram encontradas, resultando em **60% para a M1**.
 #### Proposta de melhoria para M1:
 - **Criar ambiente de teste funcional** para validar todas as funcionalidades
 - **Publicar aplicativo nas lojas oficiais** (Google Play e App Store)
-- **Gerar APK de demonstração** para testes diretos  
+- **Gerar APK de demonstração** para testes diretos
+
 ### M2 - Precisão Computacional
+**Valor Atual: 0% | Meta: =100% | Status: 🔴 Crítico**
 
+A integração entre frontend e backend está com problemas. A cada instante em que tentávamos usar o produto (com a integração), o erro ocorria.
 
+Logo a precisão computacional é de 1 erro a cada instante.
+
+O que é claramente equivalente a 0% do esperado.
 
 ### M3 - Apropriação Funcional
+**Valor Atual: 100% | Meta: ≥85% | Status: ✅ Atingido**
+
+Durante a instalação, erros foram encontrados na integração do frontend web e mobile e backend.
+
+Mesmo lendo a documentação e pedindo ajuda externa, no final, não foi possível executar o produto com exatidão.
+
+Olhando para esses elementos como conjuntos de funções, temos:
+
+* Frontend web preciso.
+* Frontend mobile preciso.
+* Backend preciso.
+* Integração imprecisa
+
+A precisão computacional portanto chega a um 4/1, o que pode ser considerado 100%.
+
 
 ## Avaliação de Usabilidade
 
@@ -214,10 +235,15 @@ Dadas as 5 mesmas telas em dispotivos diferentes, 3 possuem problemas de impleme
 - O uso de cores muito semelhantes em determinadas telas pode gerar confusão visual, principalmente para usuários com limitações cognitivas ou baixa visão. -->
 
 ### M6  Completude e Facilidade de Uso da Documentação do Usuário
-**Valor Atual Estimado: 70% | Meta: ≥85% | Status: ⚠️ Abaixo da meta**
+**Valor Atual Estimado: 60% | Meta: ≥85% | Status: ⚠️ Abaixo da meta**
 
 - Os manuais explicam as funcionalidades do aplicativo, fluxo de uso e integrações, ajudando o usuário a entender o propósito e operação do sistema.
 - Não há instruções claras para baixar o app mobile, clonar o projeto ou configurar o ambiente local.
+
+
+#### Proposta de melhoria para M6:
+- **Documentação** documentos atualizados de com instalar
+- **Aplicativo** funcionando em lojas oficiais
 
 
 <!--
@@ -254,9 +280,12 @@ Resultando em **100% na métrica M7**.
 
 | Métrica | Valor Atual | Meta | Status |
 |---------|-------------|------|--------|
-| M1 - Completude Funcional | 60% | ≥85% | 🔴 Crítico |
+| M1 - Completude Funcional | 60% | ≥85% | ⚠️ Abaixo da meta |
+| M2 - Precisão Computacional | 0% | =100% | 🔴 Crítico |
+| M3 - Apropriação Funcional | 100% | ≥85% | ✅ Atingido |
 | M4 - Clareza das Mensagens | 9,09% | ≥85% | 🔴 Crítico |
 | M5 - Consistência Operacional | 60% | ≤10% | 🔴 Crítico |
+| M6 - M6  Completude e Facilidade de Uso da Documentação do Usuário | 60% | ≥85% | ⚠️ Abaixo da meta |
 | M7 - Prevenção a erros | 100% | ≥85% | ✅ Atingido |
 
 
@@ -306,6 +335,12 @@ Resultando em **100% na métrica M7**.
       <td>06/07/2025</td>
       <td>Alinhamento com as métricas SQUARE escolhidas, exclusão de métricas redundantes, combinação de justificativas das medidas, adição de novas jusitifativas e provas, ajuste das metas de todas as métricas, cálculo das medidas de todas as métricas</td>
       <td>Raphael Mendes da Silva e Breno Lucena</td>
+    </tr>
+    <tr>
+      <td>1.6</td>
+      <td>07/07/2025</td>
+      <td>M2 e M3</td>
+      <td>Raphael Mendes da Silva, Breno Lucena, Luis Zarbielli e Dannyeclisson</td>
     </tr>
   </tbody>
 </table>
