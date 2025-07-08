@@ -109,8 +109,11 @@
   
 const metricNames = {
   M1_completude_funcional: { name: "Completude Funcional", unit: "%", target: 85 },
+  M2_precisao_computacional: { name: "Precisão Computacional", unit: "%", target: 100 },
+  M3_apropriacao_funcional: { name: "Apropriação Funcional", unit: "%", target: 85 },
   M4_clareza_mensagens: { name: "Clareza das Mensagens", unit: "%", target: 85 },
   M5_consistencia_operacional: { name: "Consistência Operacional", unit: "%", target: 10, invert: true },
+  M6_documentacao_usuario: { name: "Documentação do Usuário", unit: "%", target: 85 },
   M7_prevencao_erros: { name: "Prevenção de Erros", unit: "%", target: 85 }
 };
 
@@ -163,18 +166,24 @@ function createUsabilityChart(latestData) {
   new Chart(document.getElementById("usabilityChart"),{
     type:"bar",
     data:{
-      labels:["Clareza Mensagens","Consistência","Prevenção Erros"],
+      labels:["Clareza","Consistência","Documentação","Prevenção"],
       datasets:[{
-        label:"Usabilidade",
+        label:"Usabilidade (%)",
         data:[
           latestData.M4_clareza_mensagens,
           latestData.M5_consistencia_operacional,
+          latestData.M6_documentacao_usuario,
           latestData.M7_prevencao_erros
         ],
-        backgroundColor:["#FF6384","#9966FF","#4BC0C0"]
+        backgroundColor:["#FF6384","#9966FF","#FFCD56","#4BC0C0"]
       }]
     },
-    options:{ responsive:true }
+    options:{ 
+      responsive:true,
+      scales: {
+        y: { beginAtZero: true, max: 100 }
+      }
+    }
   });
 }
 
