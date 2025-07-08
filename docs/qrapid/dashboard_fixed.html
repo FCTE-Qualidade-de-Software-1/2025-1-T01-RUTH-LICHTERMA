@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -152,13 +153,28 @@ function createFunctionalChart(latestData) {
   new Chart(document.getElementById("functionalChart"),{
     type:"doughnut",
     data:{
-      labels:["Completude Funcional","Incompleto"],
+      labels:["Completude Funcional","Precisão Computacional","Apropriação Funcional"],
       datasets:[{
-        data:[latestData.M1_completude_funcional,100-latestData.M1_completude_funcional],
-        backgroundColor:["#36A2EB","#e0e0e0"]
+        data:[
+          latestData.M1_completude_funcional,
+          latestData.M2_precisao_computacional,
+          latestData.M3_apropriacao_funcional
+        ],
+        backgroundColor:["#36A2EB","#FF6384","#4BC0C0"]
       }]
     },
-    options:{ responsive:true }
+    options:{ 
+      responsive:true,
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              return context.label + ': ' + context.parsed.toFixed(1) + '%';
+            }
+          }
+        }
+      }
+    }
   });
 }
 
