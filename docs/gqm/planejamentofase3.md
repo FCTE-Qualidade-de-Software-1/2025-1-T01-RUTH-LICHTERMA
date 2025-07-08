@@ -32,13 +32,13 @@ Avaliar a qualidade do sistema AgroMart quanto à adequação funcional e usabil
       - No "Backlog", há uma tabela detalhada com a granularidade do backlog, incluindo: Épicos, Features e User Stories
       - Tutorial de instalação do sistema (especificamente isolado no respositório [Ajuda-Agromart](https://github.com/AgroMart/ajuda-agromart));
 
- - **Avaliação Heurística da Interface:** Inspeção da interface do usuário com base nas Heurísticas de Usabilidade de Nielsen para identificar potenciais falhas de design e usabilidade, elas são:
+- **Avaliação Heurística da Interface:** Inspeção da interface do usuário com base nas Heurísticas de Usabilidade de Nielsen para identificar potenciais falhas de design e usabilidade, elas são:
 
-  - Heurística 2 – Correspondência entre o sistema e o mundo real 
-  - Heurística 4 – Consistência e padrões
-  - Heurística 5 – Prevenção de erros 
-  - Heurística 6 – Reconhecimento em vez de memorização
-  - Heurística 9 – Recuperação de erros
+      - Heurística 2 – Correspondência entre o sistema e o mundo real 
+      - Heurística 4 – Consistência e padrões
+      - Heurística 5 – Prevenção de erros 
+      - Heurística 6 – Reconhecimento em vez de memorização
+      - Heurística 9 – Recuperação de erros
 
 - **Checklist de métricas:** Preencher tabela de métricas com valor atual, meta, status e justificativa.
 
