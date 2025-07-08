@@ -1,6 +1,6 @@
 # Dashboard Q-Rapids
 
-<iframe src="http://127.0.0.1:8000/qrapid/dashboard_fixed.html" width=1500 height=500>
+<iframe src="https://fcte-qualidade-de-software-1.github.io/2025-1-T01-RUTH-LICHTERMA/qrapid/dashboard_fixed.html" width=1500 height=500>
 
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
   <thead>
