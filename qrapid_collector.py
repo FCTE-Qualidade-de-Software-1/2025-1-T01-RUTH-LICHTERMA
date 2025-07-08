@@ -35,10 +35,13 @@ class QRapidDataCollector:
         """
         import random
         base_metrics = {
-            "M1_completude_funcional": random.uniform(70, 80),
-            "M4_clareza_mensagens": random.uniform(30, 40),
-            "M5_consistencia_operacional": random.uniform(50, 70),
-            "M7_prevencao_erros": random.uniform(80, 100),
+            "M1_completude_funcional": random.uniform(60, 85),
+            "M2_precisao_computacional": random.uniform(0, 50),
+            "M3_apropriacao_funcional": random.uniform(85, 100),
+            "M4_clareza_mensagens": random.uniform(9, 40),
+            "M5_consistencia_operacional": random.uniform(30, 70),
+            "M6_documentacao_usuario": random.uniform(50, 80),
+            "M7_prevencao_erros": random.uniform(85, 100),
         }
         return base_metrics
             
@@ -111,12 +114,15 @@ class QRapidDataCollector:
         print("="*50)
         print(f"📅 Data: {latest['date']}")
         print("\n🔧 ADEQUAÇÃO FUNCIONAL:")
-        print(f"   • Completude Funcional (M1): {latest['M1_completude_funcional']:.1f}% (Meta: ≥85%)")
+        print(f"   • Completude Funcional (M1): {latest.get('M1_completude_funcional', 0):.1f}% (Meta: ≥85%)")
+        print(f"   • Precisão Computacional (M2): {latest.get('M2_precisao_computacional', 0):.1f}% (Meta: =100%)")
+        print(f"   • Apropriação Funcional (M3): {latest.get('M3_apropriacao_funcional', 0):.1f}% (Meta: ≥85%)")
 
         print("\n👤 USABILIDADE:")
-        print(f"   • Clareza das Mensagens (M4): {latest['M4_clareza_mensagens']:.1f}% (Meta: ≥85%)")
-        print(f"   • Consistência Operacional (M5): {latest['M5_consistencia_operacional']:.1f}% (Meta: ≤10%)")
-        print(f"   • Prevenção de Erros (M7): {latest['M7_prevencao_erros']:.1f}% (Meta: ≥85%)")
+        print(f"   • Clareza das Mensagens (M4): {latest.get('M4_clareza_mensagens', 0):.1f}% (Meta: ≥85%)")
+        print(f"   • Consistência Operacional (M5): {latest.get('M5_consistencia_operacional', 0):.1f}% (Meta: ≤10%)")
+        print(f"   • Documentação do Usuário (M6): {latest.get('M6_documentacao_usuario', 0):.1f}% (Meta: ≥85%)")
+        print(f"   • Prevenção de Erros (M7): {latest.get('M7_prevencao_erros', 0):.1f}% (Meta: ≥85%)")
         
         print("="*50)
 
@@ -132,9 +138,12 @@ class QRapidDataCollector:
             metrics = {
                 "date": current_date.isoformat(),
                 "M1_completude_funcional": min(85, 60 + i * 0.5),
-                "M4_clareza_mensagens": max(9, 9 + i * 0.2),
-                "M5_consistencia_operacional": min(85, 60 + i * 0.3),
-                "M7_prevencao_erros": max(80, 100 - i * 0.3)
+                "M2_precisao_computacional": min(100, 0 + i * 2.0),
+                "M3_apropriacao_funcional": max(85, 100 - i * 0.2),
+                "M4_clareza_mensagens": min(85, 9 + i * 1.5),
+                "M5_consistencia_operacional": max(10, 60 - i * 1.0),
+                "M6_documentacao_usuario": min(85, 60 + i * 0.8),
+                "M7_prevencao_erros": max(85, 100 - i * 0.1)
             }
             data.append(metrics)
         
@@ -178,7 +187,7 @@ def main():
     if choice in ["1", "2", "3"]:
         view_dashboard = input("\n🌐 Deseja abrir o dashboard? (s/n): ")
         if view_dashboard.lower() == 's':
-            dashboard_path = os.path.abspath("docs/qrapid/dashboard.html")
+            dashboard_path = os.path.abspath("docs/qrapid/dashboard_fixed.html")
             webbrowser.open(f"file://{dashboard_path}")
             print("🌐 Dashboard aberto no navegador!")
 
