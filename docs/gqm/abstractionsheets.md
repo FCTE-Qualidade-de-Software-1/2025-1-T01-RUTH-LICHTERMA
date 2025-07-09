@@ -42,10 +42,9 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>75% das funcionalidades nas 8 interfaces principais foram implementadas</li>
-          <li>70% das tarefas centrais (Comprar e Adicionar produtos) operam corretamente</li>
-          <li>Tempo médio para completar tarefas críticas > 5 minutos devido a problemas de usabilidade</li>
-          <li>65% dos usuários conseguem executar funcionalidades sem suporte técnico </li>
+          <li>Hipótese 1: Pelo menos 85% das funcionalidades nas interfaces principais foram implementadas adequadamente.</li>
+          <li>Hipótese 2: 90% das operações de compra e adição de produtos executam sem erros.</li>
+          <li>Hipótese 3: 80% dos usuários conseguem executar funcionalidades sem suporte técnico.</li>
         </ul>
     </td>
     <td colspan="2">
@@ -101,10 +100,11 @@
   <tr>
     <td colspan="2">
         <ul>
-          <li>85% dos usuários navegam pelas 8 interfaces</li>
-          <li>75% dos textos e imagens são compreensíveis</li>
-          <li>Tempo médio de aprendizado > 15 minutos devido a problemas de nomenclatura e legibilidade</li>
-          <li>65% dos usuários completam tarefas principais sem abandonar o sistema</li>
+          <li>Hipótese 4:90% dos usuários navegam entre as interfaces sem abandonar tarefas.</li>
+          <li>Hipótese 5:85% dos usuários entendem os termos relacionados à agricultura sustentável sem explicação adicional.</li>
+          <li>Hipótese 6: 90% dos usuários percebem consistência visual e processual entre diferentes dispositivos.</li>
+          <li>Hipótese 7: 85% dos elementos visuais são interpretados corretamente sem legendas auxiliares.</li>
+          <li>Hipótese 8: 80% dos usuários conseguem corrigir erros sem abandonar a tarefa.</li>
         </ul>
     </td>
     <td colspan="2">
@@ -148,11 +148,17 @@
       <td>Revisão</td>
       <td>Leonardo Barcellos</td>
     </tr>
-        <tr>
+    <tr>
       <td>1.3</td>
       <td>07/06/2025</td>
       <td>Implementação dos feedbacks da professora</td>
       <td>Raphael Mendes, Leonardo Barcellos, Breno Lucena, Luis Zarbielli e Dannyeclisson Rodrigo</td>
+    </tr>
+    <tr>
+      <td>1.4</td>
+      <td>08/06/2025</td>
+      <td>Alinhando com as hipóteses usadas no resto do projeto</td>
+      <td>Raphael Mendes</td>
     </tr>
   </tbody>
 </table>

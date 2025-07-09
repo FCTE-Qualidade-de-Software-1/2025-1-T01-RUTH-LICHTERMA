@@ -106,10 +106,10 @@ Total de pontos da iteração: 140 pontos.
       <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>
     </tr>
     <tr>
-      <td>1.0</td>
-      <td>06/07/2025</td>
+      <td>1.1</td>
+      <td>08/07/2025</td>
       <td>Adição do resto das atividades que já tínhamos feito</td>
-      <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>
+      <td>Raphael Mendes da Silva</td>
     </tr>
   </tbody>
 </table>
