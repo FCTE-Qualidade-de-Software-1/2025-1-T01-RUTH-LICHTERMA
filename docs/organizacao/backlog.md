@@ -68,20 +68,25 @@ Atividades:
 - ✅ Compreensão do framework Q-Rapids (8 pontos)
 - ❌ Instalação do Q-Rapids (21 pontos)
 - ❌ Instação do Agromart (21 pontos)
-- ✅ Fase 1 e 2 - Adaptação para o modelo Q-Rapids (8 pontos)
-- ✅ Fase 3 - Plano de Avaliação (8 pontos)
-- ❌ Fase 4:
-    - ❌ Apresentar medidas adquiridas (13 pontos)
+- ✅ Na fase 1: adaptação para o modelo Q-Rapids (3 pontos)
+- ✅ Na fase 2: Definição de metas (5 pontos)
+- ✅ Na fase 3: realizar plano de Avaliação (8 pontos)
+- ❌ Na fase 4:
+    - ✅ Extrair medidas (13 pontos)
     - ❌ Apresentar medidas adquiridas via Q-Rapids Dashboard e Q-Rapids Forecast (21 pontos)
-    - ❌ Encontrar ao menos uma oportunidade de melhoria com base nas métricas (5 pontos)
-    - ❌ Implementar uma oportunidade de melhoria (21 pontos).
-- ✅ PSM-CID:
-    - ✅ Gráfico de Burndown (2 pontos)
+    - ✅ Encontrar ao menos uma oportunidade de melhoria com base nas métricas (5 pontos)
+    - ✅ Implementar uma oportunidade de melhoria (21 pontos).
+- ✅ Métricas de gestão de projeto com PSM-CID:
+    - ✅ Gráfico de Burndown (3 pontos)
+    - ✅ Cumulative Flow Diagram (2 pontos)
+    - ✅ Cycle Time (2 pontos)
+    - ✅ Team Velocity (2 pontos)
+    - ✅ Custo total da operação (2 pontos)
 - ✅ Ata de reunião (1 ponto)
 - ✅ Tabela de contribuição (1 ponto)
 - ✅ Exibição do backlog no Pages (2 pontos)
 
-Total de pontos da iteração: 130 pontos.
+Total de pontos da iteração: 140 pontos.
 
 
 <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
@@ -98,6 +103,12 @@ Total de pontos da iteração: 130 pontos.
       <td>1.0</td>
       <td>06/07/2025</td>
       <td>Divisão do projeto em iterações e ranqueamento das atividades</td>
+      <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>06/07/2025</td>
+      <td>Adição do resto das atividades que já tínhamos feito</td>
       <td>Raphael Mendes da Silva e Breno Lucena Cordeiro</td>
     </tr>
   </tbody>
